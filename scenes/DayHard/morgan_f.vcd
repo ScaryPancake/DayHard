@@ -1,0 +1,144 @@
+// Choreo version 1
+actor "morgan_F"
+{
+  channel "channel"
+  {
+    event flexanimation "f"
+    {
+      time 0.006667 6.138690
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.5429 1.0000
+        }
+        {
+          0.5429 0.5000
+        }
+        "blink"        
+        {
+          0.5429 0.2029
+          0.5729 0.9231
+          0.9398 0.1209
+        }
+        "inner_raiser"         combo        
+        {
+          0.5429 0.0000
+        }
+        {
+          0.5429 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.5429 1.0000
+        }
+        {
+          0.5429 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.5429 1.0000
+        }
+        {
+          0.5429 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.5429 1.0000
+        }
+        {
+          0.5429 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.5429 0.8900
+        }
+        {
+          0.5429 0.5000
+        }
+        "stretcher"         combo        
+        {
+          0.5429 0.0000
+        }
+        {
+          0.5429 0.5000
+        }
+        "bite"        
+        {
+          0.5429 0.4900
+        }
+        "presser"        
+        {
+          0.5429 0.1800
+        }
+        "tightener"        
+        {
+          0.5429 1.0000
+        }
+        "jaw_clencher"        
+        {
+          0.5429 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.5429 1.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.5429 0.5400
+        }
+        {
+          0.5429 0.5000
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+          0.5429 0.4700
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.5429 0.7900
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.5429 0.4900
+        }
+      }
+    }
+  }
+  channel "1"
+  {
+    event lookat "f"
+    {
+      time 0.083333 5.760417
+      param "breen_doom"
+      event_ramp
+      {
+        0.7340 0.7778
+      }
+    }
+  }
+  channel "da"
+  {
+    event face "face"
+    {
+      time 0.020833 5.302083
+      param "breen_doom"
+      event_ramp
+      {
+        0.3900 0.6825
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "64"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

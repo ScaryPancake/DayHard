@@ -1,0 +1,213 @@
+// Choreo version 1
+actor "donna_Micheal"
+{
+  channel "channelo_look"
+  {
+    event lookat "look"
+    {
+      time 0.090000 7.716283
+      param "mike"
+      event_ramp
+      {
+        0.3220 0.5635
+        1.0100 0.7937
+      }
+    }
+  }
+  channel "face"
+  {
+    event sequence "seq_seq"
+    {
+      time 0.520000 0.520000
+      param "test"
+      fixedlength
+    }
+  }
+  channel "expression"
+  {
+    event flexanimation "fe"
+    {
+      time -0.000000 8.000000
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.4163 0.0000
+        }
+        {
+          0.4163 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.4163 0.5900
+        }
+        {
+          0.4163 0.5000
+        }
+        "lid_droop"         combo        
+        {
+          0.4163 0.0000
+        }
+        {
+          0.4163 0.5000
+        }
+        "lid_closer"         combo        
+        {
+          0.4163 0.0600
+        }
+        {
+          0.4163 0.5000
+        }
+        "half_closed"        
+        {
+          0.4163 0.0000
+        }
+        "blink"        
+        {
+          0.4163 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          0.4163 0.0000
+        }
+        {
+          0.4163 0.0400
+        }
+        "outer_raiser"         combo        
+        {
+          0.4163 0.0000
+        }
+        {
+          0.4163 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.4163 0.2500
+        }
+        {
+          0.4163 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.4163 0.0400
+        }
+        {
+          0.4163 0.5000
+        }
+        "wrinkler"        
+        {
+          0.4163 0.0000
+        }
+        "upper_raiser"         combo        
+        {
+          0.4163 0.0400
+        }
+        {
+          0.4163 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.4163 0.4400
+        }
+        {
+          0.4163 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.4163 0.0000
+        }
+        {
+          0.4163 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.4163 0.0000
+        }
+        "part"         combo        
+        {
+          0.4163 0.0000
+        }
+        {
+          0.4163 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.4163 0.3300
+        }
+        {
+          0.4163 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.4163 0.0000
+        }
+        {
+          0.4163 0.5000
+        }
+        "stretcher"         combo        
+        {
+          0.4163 0.0000
+        }
+        {
+          0.4163 0.5000
+        }
+        "presser"        
+        {
+          0.4163 0.0000
+        }
+        "tightener"        
+        {
+          0.4163 0.0000
+        }
+        "jaw_clencher"        
+        {
+          0.4163 0.8100
+        }
+        "jaw_drop"        
+        {
+          0.4163 0.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.4163 0.0000
+        }
+        {
+          0.4163 0.5000
+        }
+        "smile"        
+        {
+          0.4163 0.1500
+        }
+        "lower_lip"        
+        {
+          0.4163 0.3500
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.4163 0.4900
+        }
+        "eyes_updown"         range 30.0 -30.0        
+        {
+          0.4163 0.3400
+        }
+        "eyes_rightleft"         range 30.0 -30.0        
+        {
+          0.4163 0.4600
+        }
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group01\Female_03.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "24"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

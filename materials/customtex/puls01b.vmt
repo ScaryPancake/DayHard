@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+
+{
+
+      "$basetexture" "customtex/puls01"
+	"$bumpmap" "customtex/puls01_bump"
+	"%keywords" "dayhard"
+}

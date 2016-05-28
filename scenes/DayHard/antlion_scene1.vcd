@@ -1,0 +1,30 @@
+// Choreo version 1
+actor "antlionguard"
+{
+  channel "move_to"
+  {
+    event moveto "move"
+    {
+      time 0.008087 5.000000
+      param "!player"
+      param2 "Run"
+      distancetotarget 28.00
+    }
+  }
+  channel "2"
+  {
+  }
+  faceposermodel "models\antlion_guard.mdl"
+}
+
+mapname "G:\Games\Valve\Steam\SteamApps\leonedi\half-life 2\hl2\maps\DayHard_part3.bsp"
+scalesettings
+{
+  "CChoreoView" "72"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

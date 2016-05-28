@@ -1,0 +1,190 @@
+// Choreo version 1
+actor "Jack_w"
+{
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.129630 19.888897
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.5391 1.0000
+        }
+        {
+          0.5391 0.5000
+        }
+        "lid_closer"         combo        
+        {
+          0.5391 0.1000
+        }
+        {
+          0.5391 0.5000
+        }
+        "half_closed"        
+        {
+          0.5391 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          0.5391 0.0000
+        }
+        {
+          0.5391 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.5391 1.0000
+        }
+        {
+          0.5391 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.5391 1.0000
+        }
+        {
+          0.5391 0.5000
+        }
+        "wrinkler"        
+        {
+          0.5391 0.6300
+        }
+        "dilator"        
+        {
+          0.5391 0.0900
+        }
+        "corner_puller"         combo        
+        {
+          0.5391 0.0000
+        }
+        {
+          0.5391 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.5391 0.0000
+        }
+        "part"         combo        
+        {
+          0.5391 0.0000
+        }
+        {
+          0.5391 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.5391 0.0000
+        }
+        {
+          0.5391 0.5000
+        }
+        "stretcher"         combo        
+        {
+          0.5391 0.3000
+        }
+        {
+          0.5391 0.5000
+        }
+        "bite"        
+        {
+          0.5391 0.0000
+        }
+        "presser"        
+        {
+          0.5391 0.0000
+        }
+        "tightener"        
+        {
+          0.5391 0.0000
+        }
+        "lower_lip"        
+        {
+          0.5391 0.0000
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.5391 0.3700
+        }
+        "eyes_updown"         range 30.0 -30.0        
+        {
+          0.5391 0.5700
+        }
+        "eyes_rightleft"         range 30.0 -30.0        
+        {
+          0.5391 0.5000
+          19.6818 0.7300
+        }
+        "gesture_rightleft"         range -1.0 1.0        
+        {
+          0.5391 0.5100
+        }
+      }
+    }
+  }
+  channel "follow"
+  {
+    event moveto "move"
+    {
+      time 0.000000 20.000000
+      param "!player"
+      param2 "Run"
+      distancetotarget 57.00
+    }
+  }
+  channel "look"
+  {
+    event lookat "look_at_me"
+    {
+      time 0.111108 19.962963
+      param "!player"
+      event_ramp
+      {
+        0.2080 0.8571
+        17.7899 0.9524
+      }
+    }
+  }
+  channel "fff"
+  {
+    event sequence "sss"
+    {
+      time 0.037037 19.944445
+      param "scaredidle"
+      event_ramp
+      {
+        0.5600 0.8413
+        19.6738 0.8730
+      }
+    }
+  }
+  channel "face"
+  {
+    event face "face"
+    {
+      time 0.037037 19.870371
+      param "!player"
+      event_ramp
+      {
+        0.5900 0.6667
+      }
+    }
+  }
+  channel "action"
+  {
+  }
+}
+
+mapname "maps\DayHardpart4.bsp"
+scalesettings
+{
+  "CChoreoView" "12"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

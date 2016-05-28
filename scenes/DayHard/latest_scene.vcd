@@ -1,0 +1,44 @@
+// Choreo version 1
+actor "Jack_ultimo"
+{
+  channel "jack_ultimo"
+  {
+    event face "fada"
+    {
+      time 0.006667 32.898441
+      param "!player"
+    }
+  }
+  channel "look"
+  {
+    event lookat "w"
+    {
+      time 0.000000 32.854610
+      param "!player"
+    }
+  }
+  channel "ch"
+  {
+    event sequence "seq"
+    {
+      time -0.007092 1.559574
+      param "luggagepush"
+      event_ramp
+      {
+        0.5980 0.3478
+      }
+      fixedlength
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "76"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

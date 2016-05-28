@@ -1,0 +1,230 @@
+// Choreo version 1
+actor "BreenBrenn"
+{
+  channel "ahaha"
+  {
+    event sequence "seq"
+    {
+      time 5.151667 7.285000
+      param "b_bg_laugh"
+      event_ramp
+      {
+        0.0340 0.0959
+        0.1400 0.2877
+        0.3000 0.4658
+        0.5280 0.4658
+        0.7720 0.4247
+        0.9560 0.3425
+        1.1220 0.1918
+      }
+      fixedlength
+    }
+    event flexanimation "flex"
+    {
+      time 0.222223 37.722225
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.0000 0.6300
+          25.9405 1.0000
+        }
+        {
+          25.9405 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          25.9405 0.0000
+        }
+        {
+          25.9405 0.5000
+        }
+        "half_closed"        
+        {
+          25.9405 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          25.9405 0.0000
+        }
+        {
+          25.9405 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.0000 0.7000
+          3.8148 0.7700
+          11.5533 0.8800
+          25.9405 1.0000
+          34.1150 0.6700
+        }
+        {
+          25.9405 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.0000 0.6600
+          4.3597 0.8900
+          25.9405 1.0000
+          35.9679 0.7700
+        }
+        {
+          25.9405 0.5000
+        }
+        "upper_raiser"         combo        
+        {
+          25.9405 0.0000
+        }
+        {
+          25.9405 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          25.9405 0.0000
+        }
+        {
+          25.9405 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          2.5069 0.4200
+          8.0655 0.3000
+          25.9405 0.4300
+        }
+        {
+          25.9405 0.5000
+        }
+        "bite"        
+        {
+          0.0000 0.1900
+          5.8857 0.3200
+          17.6570 0.2200
+          25.9405 0.3400
+        }
+        "jaw_clencher"        
+        {
+          0.0000 0.6600
+          13.0792 0.7400
+          25.9405 0.7600
+        }
+      }
+    }
+  }
+  channel "face"
+  {
+    event flexanimation "flex"
+    {
+      time 4.666667 8.826667
+      param ""
+      event_ramp
+      {
+        0.0560 0.2329
+        0.8630 0.6438
+        2.9778 0.6575
+        3.4278 0.6986
+        3.8528 0.3973
+        4.1560 0.0000
+      }
+      flexanimations samples_use_time
+      {
+        "lid_closer"         combo        
+        {
+          0.4678 0.0000
+        }
+        {
+          0.4678 0.5000
+        }
+        "blink"        
+        {
+          0.4678 0.0000
+        }
+        "outer_raiser"         combo        
+        {
+          0.4678 0.0000
+        }
+        {
+          0.4678 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.4678 1.0000
+          1.2296 1.0000
+          2.1326 0.6400
+        }
+        {
+          0.4678 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.4678 0.3500
+          1.2253 0.9500
+          2.1240 0.7100
+        }
+        {
+          0.4678 0.5000
+        }
+        "upper_raiser"         combo        
+        {
+          0.4678 0.3900
+          1.2188 0.9900
+          2.1326 0.6100
+        }
+        {
+          0.4678 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.4678 0.3600
+          1.2124 0.8400
+          1.7979 0.9100
+        }
+        {
+          0.4678 0.5000
+        }
+        "bite"        
+        {
+          0.4678 0.0000
+        }
+        "jaw_clencher"        
+        {
+          0.4678 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.4678 0.0000
+        }
+        "smile"        
+        {
+          0.4678 0.5900
+          1.2339 0.9700
+          2.1326 0.8000
+        }
+        "lower_lip"        
+        {
+          0.4678 0.0000
+        }
+      }
+    }
+  }
+  channel "look"
+  {
+    event lookat "llll"
+    {
+      time 0.013334 37.604446
+      param "camerina_portatile"
+    }
+  }
+  faceposermodel "models\breen.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "6"
+  "SceneRampTool" "100"
+  "RampTool" "24"
+  "ExpressionTool" "2"
+  "GestureTool" "100"
+}
+fps 60
+snap off

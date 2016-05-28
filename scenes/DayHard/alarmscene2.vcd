@@ -1,0 +1,60 @@
+// Choreo version 1
+actor "scientist1"
+{
+  channel "move"
+  {
+    event moveto "mm"
+    {
+      time 0.013333 31.660002
+      param "scientist2"
+      param2 "Run"
+      distancetotarget 43.00
+    }
+  }
+}
+
+actor "scientist2"
+{
+  channel "move"
+  {
+  }
+}
+
+actor "scientist0"
+{
+  channel "mve"
+  {
+    event moveto "scien"
+    {
+      time 0.166666 31.583336
+      param "scientist1"
+      param2 "Run"
+      distancetotarget 28.00
+    }
+  }
+}
+
+actor "traitor1"
+{
+  channel "move"
+  {
+    event moveto "mm"
+    {
+      time -0.000000 31.500004
+      param "scientist1"
+      param2 "Run"
+      distancetotarget 69.00
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "8"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

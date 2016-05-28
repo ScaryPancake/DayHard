@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+
+{
+
+      "$basetexture" "customtex/dhbloop"
+        "$decal" 1
+       "$decalscale" 0.11
+}

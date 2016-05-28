@@ -1,0 +1,184 @@
+// Choreo version 1
+actor "finto_Jack"
+{
+  channel "look"
+  {
+    event generic "ai"
+    {
+      time 0.013334 4.013334
+      param "AI_AIM"
+      param2 "sn_target"
+    }
+  }
+  channel "looka"
+  {
+    event lookat "looooo"
+    {
+      time 0.013334 3.993334
+      param "sn_target"
+    }
+  }
+  channel "esx"
+  {
+    event flexanimation "flex"
+    {
+      time 0.000000 3.926667
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_closer"         combo        
+        {
+          0.1822 0.0000
+        }
+        {
+          0.1822 0.5000
+        }
+        "blink"        
+        {
+          0.1822 0.1400
+        }
+        "inner_raiser"         combo        
+        {
+          0.1822 1.0000
+        }
+        {
+          0.1822 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.1822 0.0000
+        }
+        {
+          0.1822 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.1822 0.6600
+        }
+        {
+          0.1822 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.1822 1.0000
+        }
+        {
+          0.1822 0.5000
+        }
+        "wrinkler"        
+        {
+          0.1822 0.0000
+        }
+        "upper_raiser"         combo        
+        {
+          0.1822 0.0000
+        }
+        {
+          0.1822 0.5000
+        }
+        "part"         combo        
+        {
+          0.1822 0.0000
+        }
+        {
+          0.1822 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.1822 0.0000
+        }
+        {
+          0.1822 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.1822 0.0000
+        }
+        {
+          0.1822 0.5000
+        }
+        "stretcher"         combo        
+        {
+          0.1822 0.0000
+        }
+        {
+          0.1822 0.5000
+        }
+        "bite"        
+        {
+          0.1822 0.0000
+        }
+        "presser"        
+        {
+          0.1822 0.0000
+        }
+        "tightener"        
+        {
+          0.1822 0.0000
+        }
+        "jaw_clencher"        
+        {
+          0.1822 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.1822 0.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.1822 0.0000
+        }
+        {
+          0.1822 0.5000
+        }
+        "smile"        
+        {
+          0.1822 1.0000
+        }
+        "lower_lip"        
+        {
+          0.1822 0.0000
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+          0.1822 0.6600
+        }
+        "eyes_updown"         range 30.0 -30.0        
+        {
+          0.1822 0.5000
+        }
+        "eyes_rightleft"         range 30.0 -30.0        
+        {
+          0.1822 0.0000
+        }
+        "chest_rightleft"         range 30.0 -30.0        
+        {
+          0.1822 0.5000
+        }
+        "head_forwardback"         range 0.2 -0.2        
+        {
+          0.1822 0.0900
+        }
+        "gesture_updown"         range -1.0 1.0        
+        {
+          0.1822 0.4800
+        }
+      }
+    }
+  }
+  channel "ff"
+  {
+  }
+}
+
+mapname "maps\dayhardpart1.bsp"
+scalesettings
+{
+  "CChoreoView" "100"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,112 @@
+// Choreo version 1
+actor "cittadino_pizzeria"
+{
+  channel "1"
+  {
+    event sequence "seq"
+    {
+      time 0.000000 70.000000
+      param "d1_t03_Sit_Bed"
+    }
+  }
+  channel "2"
+  {
+    event lookat "look"
+    {
+      time 0.000000 70.000000
+      param "!player"
+    }
+  }
+  channel "3"
+  {
+  }
+  channel "4"
+  {
+    event flexanimation "flex"
+    {
+      time 0.000000 70.000000
+      param ""
+      flexanimations samples_use_time
+      {
+        "inner_raiser"         combo        
+        {
+          0.7153 0.5600
+          1.2160 0.7900
+          2.4226 0.8500
+          5.1500 0.8800
+          8.6663 0.7300
+        }
+        {
+          0.2725 1.0000
+        }
+        "outer_raiser"         combo        
+        {
+          0.2725 0.0000
+        }
+        {
+          0.2725 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.2725 0.0000
+        }
+        {
+          0.2725 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.2725 0.0000
+        }
+        {
+          0.2725 0.5000
+        }
+        "wrinkler"        
+        {
+          0.2725 0.6500
+          0.9656 1.0000
+          1.8955 0.8200
+          4.0771 0.9300
+          7.4389 0.8500
+          9.0125 0.5500
+        }
+        "presser"        
+        {
+          1.0729 0.1200
+          29.7063 0.2100
+          55.3625 0.5000
+        }
+        "smile"        
+        {
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+          0.2725 0.4700
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.2725 0.6500
+        }
+        "eyes_updown"         range 30.0 -30.0        
+        {
+          0.2725 0.5100
+        }
+        "head_forwardback"         range 0.2 -0.2        
+        {
+          0.2725 0.4500
+        }
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group01\Female_03.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "8"
+  "SceneRampTool" "100"
+  "RampTool" "100"
+  "ExpressionTool" "2"
+  "GestureTool" "100"
+}
+fps 60
+snap off

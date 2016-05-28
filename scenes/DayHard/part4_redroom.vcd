@@ -1,0 +1,103 @@
+// Choreo version 1
+actor "red1"
+{
+  channel "move"
+  {
+    event moveto "move"
+    {
+      time 0.006667 4.440001
+      param "red3"
+      param2 "Walk"
+      distancetotarget 66.00
+    }
+    event moveto "mm"
+    {
+      time 5.233334 9.216667
+      param "red2"
+      param2 "Walk"
+      distancetotarget 77.00
+    }
+  }
+  channel "seq"
+  {
+    event sequence "seqqq"
+    {
+      time 2.933333 5.766666
+      param "kgesture09"
+      event_ramp
+      {
+        0.8100 0.4342
+      }
+      fixedlength
+    }
+  }
+  channel "face"
+  {
+    event face "face"
+    {
+      time 2.283333 5.383333
+      param "red3"
+      event_ramp
+      {
+        0.1120 0.3553
+        0.7020 0.6053
+        2.0420 0.4737
+      }
+    }
+  }
+}
+
+actor "red2"
+{
+  channel "ch"
+  {
+    event lookat "look"
+    {
+      time 0.000000 5.537357
+      param "red1"
+      event_ramp
+      {
+        0.0740 0.3289
+        0.3180 0.6447
+        4.9493 0.5132
+        5.3253 0.1184
+      }
+    }
+  }
+}
+
+actor "red3"
+{
+  channel "labbro"
+  {
+    event face "face"
+    {
+      time 2.149426 5.888506
+      param "red1"
+    }
+  }
+  channel "i"
+  {
+    event sequence "seq"
+    {
+      time 1.216667 4.983334
+      param "kgesture10"
+      event_ramp
+      {
+        0.1980 0.3553
+      }
+      fixedlength
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "40"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

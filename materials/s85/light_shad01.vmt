@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "s85/light_shad01"
+	"$surfaceprop" "tile"
+	"%keywords" "dayhard"
+	"$decal" 1
+	"$decalscale" 0.10
+	"$translucent" 1
+}

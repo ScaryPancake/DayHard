@@ -1,0 +1,82 @@
+// Choreo version 1
+actor "twin1"
+{
+  channel "1"
+  {
+    event face "face"
+    {
+      time 0.007723 25.000000
+      param "!player"
+      event_ramp
+      {
+        0.0100 0.1176
+        0.0340 0.4706
+        0.0860 0.7647
+        0.1760 0.9559
+        24.3793 1.0000
+        24.7373 0.7794
+      }
+    }
+  }
+  channel "2"
+  {
+    event lookat "dd"
+    {
+      time 0.007722 25.159260
+      param "!player"
+      event_ramp
+      {
+        0.4000 0.3529
+        1.3000 0.7206
+        20.7000 1.0000
+        23.6000 0.7353
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_07.mdl"
+}
+
+actor "twin2"
+{
+  channel "1"
+  {
+    event face "fff"
+    {
+      time 0.013889 24.986113
+      param "!player"
+      event_ramp
+      {
+        0.0280 0.1765
+        0.1020 0.7206
+        0.1880 0.9412
+        23.8633 1.0000
+        24.6133 0.8088
+      }
+    }
+  }
+  channel "2"
+  {
+    event lookat "look"
+    {
+      time 0.022222 25.000000
+      param "!player"
+      event_ramp
+      {
+        0.2000 0.4853
+        2.8000 1.0000
+        22.9000 0.9559
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "4"
+  "RampTool" "2"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+
+{
+	"$basetexture" "customtex/dash_kappei"
+//	"$translucent" 1
+	"$decal" 1
+	"$decalscale" .25
+	"%keywords" "dayhard"
+
+}

@@ -1,0 +1,9 @@
+// envmaptint_fix
+"LightmappedGeneric"
+{
+	"$detail" "detail/detail_noise1"
+	"$detailscale" 20
+	"$basetexture" "customtex/muro02"
+	"$surfaceprop" "plaster"
+	"%keywords" "dayhard"
+}

@@ -1,0 +1,180 @@
+// Choreo version 1
+actor "engman2"
+{
+  channel "ch"
+  {
+    event face "cam_cutz03"
+    {
+      time 0.013333 5.000000
+      param "cam_cutz03"
+    }
+  }
+  channel "face"
+  {
+    event flexanimation "ff"
+    {
+      time 0.024691 6.030865
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_closer"         combo        
+        {
+          0.6030 0.5500
+        }
+        {
+          0.6030 0.5000
+        }
+        "inner_raiser"         combo        
+        {
+          0.6030 0.0000
+        }
+        {
+          0.6030 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.6030 0.0000
+        }
+        {
+          0.6030 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.6030 1.0000
+        }
+        {
+          0.6030 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.6030 0.5000
+        }
+        {
+          0.6030 0.5000
+        }
+        "wrinkler"        
+        {
+          0.6030 1.0000
+        }
+        "upper_raiser"         combo        
+        {
+          0.6030 0.0000
+        }
+        {
+          0.6030 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.6030 0.9800
+        }
+        {
+          0.6030 0.5000
+        }
+        "jaw_clencher"        
+        {
+          0.6030 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.6030 0.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.6030 0.0000
+        }
+        {
+          0.6030 0.5000
+        }
+        "smile"        
+        {
+          0.6030 0.3000
+        }
+        "lower_lip"        
+        {
+          0.6030 0.1500
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.6030 0.2700
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.6030 0.5500
+        }
+      }
+    }
+  }
+  channel "action"
+  {
+    event sequence "seq"
+    {
+      time 1.000000 3.133333
+      param "g_cb_thought"
+      event_ramp
+      {
+        0.0940 0.8730
+        1.9020 0.8889
+      }
+      fixedlength
+    }
+    event sequence "g"
+    {
+      time 2.185185 4.418519
+      param "Gesture02"
+      event_ramp
+      {
+        0.2600 0.7302
+        1.9660 0.6984
+      }
+      fixedlength
+    }
+  }
+  channel "face2"
+  {
+    event flexanimation "ff"
+    {
+      time 1.000000 1.561728
+      param ""
+      event_ramp
+      {
+        0.0320 1.0000
+        0.1440 0.8889
+        0.3720 0.9524
+        0.5160 0.8889
+      }
+      flexanimations samples_use_time
+      {
+        "jaw_clencher"        
+        {
+          0.5021 0.0000
+          0.5450 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.5021 1.0000
+          0.5450 1.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.5021 1.0000
+          0.5450 0.6000
+        }
+        {
+          0.5021 0.5000
+          0.5450 0.5000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "54"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

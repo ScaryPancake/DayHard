@@ -1,0 +1,357 @@
+// Choreo version 1
+actor "Morgan_2"
+{
+  channel "smile"
+  {
+    event sequence "seq"
+    {
+      time 8.034391 9.901058
+      param "cheer1"
+      event_ramp
+      {
+        0.4520 0.6413
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 2.378307 10.359789
+      param "pullrope2idle"
+      event_ramp
+      {
+        0.2360 0.6848
+        0.7280 0.5761
+        1.0880 0.4348
+        2.9460 0.3478
+        7.7932 0.2609
+      }
+    }
+    event sequence "seq"
+    {
+      time 1.669312 3.535979
+      param "cheer1"
+      event_ramp
+      {
+        0.4520 0.6413
+      }
+      fixedlength
+    }
+    event sequence "seqr"
+    {
+      time 6.177249 8.143915
+      param "pullrope1idle"
+      event_ramp
+      {
+        0.5280 0.4891
+      }
+    }
+    event sequence "seq"
+    {
+      time 3.939153 5.805820
+      param "cheer1"
+      event_ramp
+      {
+        0.4520 0.6413
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 9.452382 17.433865
+      param "pullrope2idle"
+      event_ramp
+      {
+        0.2360 0.6848
+        0.7280 0.5761
+        1.0880 0.4348
+        2.9460 0.3478
+        7.7932 0.2609
+      }
+    }
+    event sequence "seq"
+    {
+      time 11.462963 13.129630
+      param "Heal"
+      event_ramp
+      {
+        0.0940 0.2250
+        0.1280 0.3000
+        0.1720 0.5125
+        0.2280 0.5500
+      }
+      fixedlength
+    }
+  }
+  channel "look"
+  {
+    event face "face"
+    {
+      time 0.029149 15.978883
+      param "alessia"
+      event_ramp
+      {
+        0.1040 0.5326
+        1.7860 0.7826
+        15.8428 1.0000
+      }
+    }
+  }
+  channel "smile"
+  {
+    event flexanimation "flex"
+    {
+      time 0.027994 22.665318
+      param ""
+      event_ramp
+      {
+        0.0140 0.7935
+        22.3667 0.8370
+      }
+      flexanimations samples_use_time
+      {
+        "cheek_raiser"         combo        
+        {
+          0.2704 0.5100
+        }
+        {
+          0.2704 0.5000
+        }
+        "smile"        
+        {
+          0.2704 0.5700
+          3.3970 0.6300
+        }
+      }
+    }
+  }
+  channel "moveto"
+  {
+    event lookat "llok"
+    {
+      time 0.055556 22.555557
+      param "alessia"
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_07.mdl"
+}
+
+actor "Alessia"
+{
+  channel "smile"
+  {
+    event flexanimation "ff"
+    {
+      time 0.009524 15.913228
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_closer"         combo        
+        {
+          0.4742 0.0800
+        }
+        {
+          0.4742 0.5000
+        }
+        "inner_raiser"         combo        
+        {
+          0.4742 0.6900
+        }
+        {
+          0.4742 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.4742 0.6100
+        }
+        {
+          0.4742 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.4742 0.5700
+        }
+        {
+          0.4742 0.4400
+        }
+      }
+    }
+  }
+  channel "smile"
+  {
+    event flexanimation "ff"
+    {
+      time 0.010101 15.079124
+      param ""
+      flexanimations samples_use_time
+      {
+        "cheek_raiser"         combo        
+        {
+        }
+        {
+        }
+        "smile"        
+        {
+          0.5990 0.8600
+        }
+      }
+    }
+  }
+  channel "face"
+  {
+    event face "faceeee"
+    {
+      time -0.076720 15.634921
+      param "Morgan_2"
+    }
+  }
+  channel "dance"
+  {
+    event sequence "seq"
+    {
+      time 1.732804 3.266138
+      param "cheer1"
+      event_ramp
+      {
+        0.2800 0.2609
+        0.6080 0.6304
+        0.7520 0.5217
+        0.8620 0.3043
+        1.0720 0.6196
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 10.039683 11.573017
+      param "cheer1"
+      event_ramp
+      {
+        0.2800 0.2609
+        0.6080 0.6304
+        0.7520 0.5217
+        0.8620 0.3043
+        1.0720 0.6196
+      }
+      fixedlength
+    }
+    event sequence "re"
+    {
+      time 1.936507 10.925926
+      param "pullrope1idle"
+      event_ramp
+      {
+        0.2100 0.4022
+        0.5060 0.4565
+        1.0200 0.3261
+        1.1760 0.5109
+        2.5080 0.7174
+        2.8340 0.3587
+        4.7241 0.5326
+        5.0441 0.2391
+        5.5841 0.3478
+        5.8841 0.4457
+        7.8301 0.3261
+      }
+    }
+    event sequence "re"
+    {
+      time 3.148148 4.214815
+      param "checkmale"
+      event_ramp
+      {
+        0.0820 0.1522
+        0.1520 0.2717
+        0.4240 0.3478
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 6.666665 9.666665
+      param "explosion_slowdown"
+      event_ramp
+      {
+        0.1280 0.3261
+        0.3360 0.6087
+      }
+      fixedlength
+    }
+    event sequence "tr"
+    {
+      time 10.518519 13.485186
+      param "A_g_wave"
+      event_ramp
+      {
+        0.4120 0.3804
+        1.1320 0.7500
+        1.5380 0.4348
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 4.558201 6.091535
+      param "cheer1"
+      event_ramp
+      {
+        0.2800 0.2609
+        0.6080 0.6304
+        0.7520 0.5217
+        0.8620 0.3043
+        1.0720 0.6196
+      }
+      fixedlength
+    }
+    event sequence "tr"
+    {
+      time 5.074074 8.040741
+      param "A_g_wave"
+      event_ramp
+      {
+        0.4120 0.3804
+        1.1320 0.7500
+        1.5380 0.4348
+      }
+      fixedlength
+    }
+  }
+  channel "ch"
+  {
+    event moveto "mm"
+    {
+      time 0.055556 2.425926
+      param "targetMorganmove"
+      param2 "Walk"
+      event_ramp
+      {
+        0.1160 0.4674
+        0.2680 0.7065
+        0.9020 0.7065
+        1.1340 0.6707
+        1.7140 0.3375
+      }
+      distancetotarget 32.00
+    }
+  }
+  channel "1"
+  {
+    event lookat "hth"
+    {
+      time 0.000000 21.833332
+      param "morgan_2"
+    }
+  }
+  faceposermodel "models\alyx.mdl"
+}
+
+mapname "maps\Finale.bsp"
+scalesettings
+{
+  "CChoreoView" "8"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

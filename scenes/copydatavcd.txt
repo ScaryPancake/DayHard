@@ -1,0 +1,13 @@
+// Choreo version 1
+actor "englishman"
+{
+  channel "2"
+  {
+    event lookat "look"
+    {
+      time -0.000000 6.075758
+      param "george"
+    }
+  }
+}
+

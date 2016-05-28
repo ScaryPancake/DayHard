@@ -1,0 +1,123 @@
+// Choreo version 1
+actor "gregori"
+{
+  channel "face"
+  {
+    event flexanimation "flex"
+    {
+      time 0.020833 9.186774
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.0751 0.0000
+        }
+        {
+          0.0751 0.5000
+        }
+        "blink"        
+        {
+          0.3771 0.1600
+          0.7041 0.2500
+          1.1222 0.1200
+          1.4267 0.1300
+          2.4151 0.1600
+          3.2180 0.1200
+          3.4026 0.1800
+          3.5914 0.1500
+          3.8124 0.1800
+          5.4060 0.1800
+          6.3606 0.0500
+        }
+        "lowerer"         combo        
+        {
+          0.0751 0.4100
+          4.9551 0.7400
+          5.1525 0.7300
+          5.3478 0.7500
+          6.3203 0.8300
+        }
+        {
+          0.0751 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.0751 0.2100
+          6.4191 0.6900
+        }
+        {
+          0.0751 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.0751 0.7500
+          5.3860 0.7800
+          5.5211 0.7600
+          5.7529 0.7400
+          5.9889 0.7200
+          6.2293 0.8100
+        }
+        {
+          0.0751 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.0751 0.0000
+        }
+        {
+          0.0751 0.5000
+        }
+        "smile"        
+        {
+          0.0751 0.6300
+          5.4074 0.7600
+          6.1349 0.7500
+        }
+      }
+    }
+  }
+  channel "1"
+  {
+    event sequence "seq"
+    {
+      time 0.115468 2.082135
+      param "g_Well_Done_Brother"
+      event_ramp
+      {
+        0.0500 0.3239
+        0.2440 0.6901
+        0.5240 1.0000
+        1.4280 0.4462
+      }
+      fixedlength
+    }
+  }
+  channel "look"
+  {
+    event lookat "sd"
+    {
+      time 0.024691 6.616921
+      param "CUTSCENE_CAM_BADandGregori_4"
+      event_ramp
+      {
+        0.0280 0.1429
+        0.2400 0.6190
+        0.5380 0.8889
+        0.7300 1.0000
+        5.5320 0.8730
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "34"
+  "ExpressionTool" "14"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

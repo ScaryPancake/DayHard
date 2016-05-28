@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+
+{
+
+      "$basetexture" "customtex/foto11"
+        "$decal" 1
+       "$decalscale" 0.17
+}

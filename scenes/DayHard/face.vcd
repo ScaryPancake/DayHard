@@ -1,0 +1,14 @@
+// Choreo version 1
+actor "male08"
+{
+  channel "expression"
+  {
+    event expression "expression"
+    {
+      time 0.026667 14.133333
+      param "arg"
+      param2 "expression"
+    }
+  }
+}
+

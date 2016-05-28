@@ -1,0 +1,278 @@
+// Choreo version 1
+actor "englishman"
+{
+  channel "1"
+  {
+    event face "d"
+    {
+      time 0.000000 6.760174
+      param "george"
+    }
+  }
+  channel "2"
+  {
+    event lookat "look"
+    {
+      time -0.000000 6.075758
+      param "george"
+    }
+    event lookat "look"
+    {
+      time 4.523809 10.599567
+      param "!self"
+      event_ramp
+      {
+        0.1500 0.2794
+        0.7250 0.3529
+        3.2750 0.2941
+        4.9000 0.1471
+        5.9250 0.0588
+      }
+    }
+  }
+  channel "3"
+  {
+    event moveto "move"
+    {
+      time 0.030303 4.439394
+      param "george"
+      param2 "Walk"
+      event_ramp
+      {
+        0.0364 0.1912
+        0.1091 0.4853
+        0.2318 0.6471
+        0.4227 0.7059
+        0.9227 0.7206
+        1.4409 0.7794
+        2.2084 0.8235
+        2.3248 0.7500
+        2.6315 0.7059
+        3.7415 0.5882
+        4.0715 0.4706
+      }
+      distancetotarget 28.00
+    }
+  }
+  channel "4"
+  {
+    event sequence "se"
+    {
+      time 3.590909 4.090909
+      param "shootp1"
+      event_ramp
+      {
+        0.0100 0.1765
+        0.1500 0.9265
+        0.2200 1.0000
+        0.3300 1.0000
+        0.4900 0.7794
+      }
+      fixedlength
+    }
+    event sequence "se"
+    {
+      time 2.348485 3.648485
+      param "reload_pistol"
+      event_ramp
+      {
+        0.0200 0.2059
+        0.2000 0.4559
+        0.4700 0.5147
+        0.6400 0.4853
+        0.9400 0.3971
+        1.1200 0.3088
+      }
+      fixedlength
+    }
+    event sequence "se"
+    {
+      time 4.002164 4.502164
+      param "shootp1"
+      event_ramp
+      {
+        0.0000 0.7059
+        0.2200 1.0000
+        0.3300 0.7794
+        0.5000 0.1323
+      }
+      fixedlength
+    }
+    event sequence "se"
+    {
+      time 4.335498 7.302165
+      param "Gesture_salute"
+      event_ramp
+      {
+        0.1000 0.5735
+      }
+      fixedlength
+    }
+  }
+  channel "5"
+  {
+    event face "face"
+    {
+      time 4.547619 14.071430
+      param "breen"
+      event_ramp
+      {
+        0.1000 0.1029
+        1.1250 0.5000
+        1.7000 0.6324
+        2.3500 0.8676
+        4.6000 0.8235
+        6.5000 0.7500
+        8.5750 0.6176
+      }
+      lockbodyfacing
+    }
+    event lookat "lo"
+    {
+      time 4.357142 13.857142
+      param "breen"
+      event_ramp
+      {
+        0.1000 0.1324
+        0.5000 0.2059
+        1.0250 0.3088
+        1.8250 0.4706
+        2.4750 0.7059
+        3.5750 0.8824
+        4.8250 0.8971
+        7.1000 0.9118
+        8.5000 0.7941
+      }
+    }
+  }
+}
+
+actor "breen"
+{
+  channel "1"
+  {
+    event flexanimation "ff"
+    {
+      time 0.077193 19.226151
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.0698 0.4600
+          0.4167 0.8200
+          11.7091 0.6200
+        }
+        {
+          0.4167 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.4167 0.0000
+        }
+        {
+          0.4167 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.0305 0.5500
+          0.4167 1.0000
+        }
+        {
+          0.4167 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.0305 0.1900
+          0.4167 0.4900
+          1.8000 0.7400
+          7.7455 0.5800
+          11.5364 0.5100
+        }
+        {
+          0.4167 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.4167 1.0000
+        }
+        {
+          0.4167 0.5000
+        }
+        "smile"        
+        {
+          0.4167 0.5100
+          8.8364 0.7500
+          12.2545 0.5300
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+          0.4167 0.7600
+          11.1636 0.9300
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.4167 0.4900
+          6.3636 0.5800
+          11.3455 0.4800
+        }
+      }
+    }
+  }
+  channel "2"
+  {
+    event lookat "look"
+    {
+      time 0.066667 9.655556
+      param "englishman"
+      event_ramp
+      {
+        0.0800 0.1471
+        0.3400 0.5882
+        1.1300 0.7941
+        2.8900 0.7794
+        6.4167 0.7647
+      }
+    }
+    event face "face"
+    {
+      time 1.485714 11.665079
+      param "englishman"
+      event_ramp
+      {
+        0.2000 0.1618
+        0.6750 0.2647
+        1.3500 0.3382
+        1.9250 0.5441
+        2.6250 0.8235
+        3.4000 0.9706
+        4.1750 0.9265
+        4.8250 0.6324
+        5.4727 0.3382
+        5.5460 0.2353
+      }
+    }
+    event face "face"
+    {
+      time 9.555555 19.211111
+      param "!player"
+      event_ramp
+      {
+        0.2000 0.1618
+        3.4000 0.9706
+        4.1750 0.9265
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "28"
+  "RampTool" "8"
+  "ExpressionTool" "6"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

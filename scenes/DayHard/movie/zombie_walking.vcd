@@ -1,0 +1,60 @@
+// Choreo version 1
+actor "zac"
+{
+  channel "action"
+  {
+    event sequence "ealk"
+    {
+      time 1.191851 12.283337
+      param "Walk"
+      event_ramp
+      {
+        0.0340 1.0000
+      }
+    }
+    event moveto "ss"
+    {
+      time -1.796296 -1.296296
+      param "movie_actor1"
+      param2 "Walk"
+    }
+    event sequence "as"
+    {
+      time 8.619048 20.595236
+      param "FireWalk"
+      event_ramp
+      {
+        0.0440 1.0000
+      }
+    }
+  }
+  channel "action2"
+  {
+    event sequence "Z"
+    {
+      time 0.018518 1.318518
+      param "ThrowWarning"
+      event_ramp
+      {
+        0.8480 1.0000
+      }
+      fixedlength
+    }
+  }
+  channel "walk"
+  {
+  }
+  faceposermodel "models\Zombie\Poison.mdl"
+}
+
+mapname "maps\horro_flick.bsp"
+scalesettings
+{
+  "CChoreoView" "14"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,198 @@
+// Choreo version 1
+actor "Movie_actor1"
+{
+  channel "look"
+  {
+  }
+}
+
+actor "Movie_actor2"
+{
+  channel "look"
+  {
+    event flexanimation "4"
+    {
+      time 0.034483 3.942529
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.3323 1.0000
+        }
+        {
+          0.3323 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.3323 0.0000
+        }
+        {
+          0.3323 0.5000
+        }
+        "inner_raiser"         combo        
+        {
+          0.3323 1.0000
+        }
+        {
+          0.3323 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.3323 0.0000
+        }
+        {
+          0.3323 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.3323 0.0000
+        }
+        {
+          0.3323 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.3323 1.0000
+        }
+        {
+          0.3323 0.5000
+        }
+        "wrinkler"        
+        {
+          0.3323 1.0000
+        }
+        "dilator"        
+        {
+          0.3323 1.0000
+        }
+        "upper_raiser"         combo        
+        {
+          0.3323 0.0000
+        }
+        {
+          0.3323 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.3323 1.0000
+        }
+        {
+          0.3323 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.3323 0.0000
+        }
+        "part"         combo        
+        {
+          0.3323 1.0000
+        }
+        {
+          0.3323 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.3323 0.0000
+        }
+        {
+          0.3323 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.3323 1.0000
+        }
+        {
+          0.3323 0.5000
+        }
+        "stretcher"         combo        
+        {
+          0.3323 0.0000
+        }
+        {
+          0.3323 0.5000
+        }
+        "bite"        
+        {
+          0.3323 0.0000
+        }
+        "presser"        
+        {
+          0.3323 0.0000
+        }
+        "tightener"        
+        {
+          0.3323 0.0000
+        }
+        "jaw_clencher"        
+        {
+          0.3323 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.3323 1.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.3323 0.0000
+        }
+        {
+          0.3323 0.5000
+        }
+        "smile"        
+        {
+          0.3323 0.0000
+        }
+        "lower_lip"        
+        {
+          0.3323 1.0000
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+          0.3323 0.5900
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.3323 0.4600
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.3323 0.4100
+        }
+        "eyes_updown"         range 30.0 -30.0        
+        {
+          0.3323 0.5000
+        }
+        "body_rightleft"         range 30.0 -30.0        
+        {
+          0.3323 0.5000
+        }
+        "head_forwardback"         range 0.2 -0.2        
+        {
+          0.3323 0.2200
+        }
+        "gesture_updown"         range -1.0 1.0        
+        {
+          0.3323 0.9300
+        }
+        "gesture_rightleft"         range -1.0 1.0        
+        {
+          0.3323 0.7600
+        }
+      }
+    }
+  }
+  faceposermodel "models\mossman.mdl"
+}
+
+mapname "maps\horro_flick.bsp"
+scalesettings
+{
+  "CChoreoView" "58"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

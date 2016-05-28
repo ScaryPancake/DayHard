@@ -1,0 +1,535 @@
+// Choreo version 1
+actor "MorganD"
+{
+  channel "face"
+  {
+    event flexanimation "flex"
+    {
+      time 0.006667 8.209166
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.2768 1.0000
+        }
+        {
+          0.2768 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.2768 1.0000
+        }
+        {
+          0.2768 0.5000
+        }
+        "lid_droop"         combo        
+        {
+          0.2768 0.0000
+        }
+        {
+          0.2768 0.5000
+        }
+        "lid_closer"         combo        
+        {
+          0.2768 0.0000
+        }
+        {
+          0.2768 0.5000
+        }
+        "half_closed"        
+        {
+          0.2768 0.0000
+        }
+        "blink"        
+        {
+          0.2768 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          0.2768 0.0000
+        }
+        {
+          0.2768 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.2768 0.0000
+        }
+        {
+          0.2768 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.2768 1.0000
+        }
+        {
+          0.2768 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.2768 0.6100
+        }
+        {
+          0.2768 0.5000
+        }
+        "wrinkler"        
+        {
+          0.2768 1.0000
+        }
+        "dilator"        
+        {
+          0.2768 0.0000
+        }
+        "upper_raiser"         combo        
+        {
+          0.2768 0.8500
+        }
+        {
+          0.2768 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.2768 0.0000
+        }
+        {
+          0.2768 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.2768 0.0000
+        }
+        {
+          0.2768 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.2768 0.1500
+        }
+        "part"         combo        
+        {
+          0.2768 1.0000
+        }
+        {
+          0.2768 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.2768 1.0000
+        }
+        {
+          0.2768 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.2768 1.0000
+        }
+        {
+          0.2768 0.5000
+        }
+        "stretcher"         combo        
+        {
+          0.2768 0.3500
+        }
+        {
+          0.2768 0.5000
+        }
+        "bite"        
+        {
+          0.2768 0.0000
+        }
+        "presser"        
+        {
+          0.2768 0.0000
+        }
+        "tightener"        
+        {
+          0.2768 0.2000
+        }
+        "jaw_clencher"        
+        {
+          0.2768 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.2768 0.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.2768 0.0000
+        }
+        {
+          0.2768 0.5000
+        }
+        "smile"        
+        {
+          0.2768 0.0000
+        }
+        "lower_lip"        
+        {
+          0.2768 0.0000
+        }
+      }
+    }
+  }
+  channel "look"
+  {
+    event lookat "ll"
+    {
+      time 0.013333 4.935556
+      param "JackD"
+    }
+  }
+  channel "act"
+  {
+    event flexanimation "oh"
+    {
+      time 0.020833 1.312500
+      param ""
+      flexanimations samples_use_time
+      {
+        "upper_raiser"         combo        
+        {
+          0.3069 0.0100
+          0.3712 0.9800
+          0.3841 0.7300
+          0.4056 1.0000
+          0.4528 1.0000
+        }
+        {
+          0.4528 0.5000
+        }
+        "jaw_drop"        
+        {
+          0.3584 0.0800
+          0.3814 0.6500
+          0.4041 0.0900
+          0.4270 0.4400
+          0.4420 0.9800
+          0.4968 0.4500
+          0.5472 0.0000
+          0.6287 0.3600
+          0.6545 0.8800
+          0.6824 0.7200
+          0.7146 0.0600
+          0.7382 0.0700
+          0.7897 0.9200
+          0.8176 0.0600
+          0.8519 0.6100
+        }
+        "lower_lip"        
+        {
+          0.5257 0.0000
+          0.6438 0.9300
+          0.7210 0.0400
+        }
+      }
+    }
+    event flexanimation "oh"
+    {
+      time 2.562500 3.250000
+      param ""
+      flexanimations samples_use_time
+      {
+        "upper_raiser"         combo        
+        {
+          0.3069 0.0100
+          0.3712 0.9800
+          0.3841 0.7300
+          0.4056 1.0000
+          0.4528 1.0000
+        }
+        {
+          0.4528 0.5000
+        }
+        "jaw_drop"        
+        {
+          0.3584 0.0800
+          0.3814 0.6500
+          0.4041 0.0900
+          0.4270 0.4400
+          0.4420 0.9800
+          0.4968 0.4500
+        }
+      }
+    }
+  }
+  channel "face"
+  {
+    event face "face"
+    {
+      time 0.312500 3.479167
+      param "jackd"
+      event_ramp
+      {
+        0.3260 0.8095
+        2.1900 0.7143
+      }
+      lockbodyfacing
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_07.mdl"
+}
+
+actor "JackD"
+{
+  channel "face"
+  {
+    event lookat "d"
+    {
+      time 0.022222 7.481944
+      param "MorganD"
+    }
+  }
+  channel "face2"
+  {
+    event flexanimation "flexx"
+    {
+      time 4.644444 9.466666
+      param ""
+      event_ramp
+      {
+        0.3060 1.0000
+      }
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.5279 0.3500
+        }
+        {
+          0.5279 0.5000
+        }
+        "lid_droop"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "lid_closer"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "half_closed"        
+        {
+          0.5279 0.0000
+        }
+        "blink"        
+        {
+          0.5279 0.2500
+        }
+        "inner_raiser"         combo        
+        {
+          0.5279 1.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.5279 1.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.5279 1.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "upper_raiser"         combo        
+        {
+          0.5279 0.4300
+        }
+        {
+          0.5279 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.5279 0.0000
+        }
+        "part"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "bite"        
+        {
+          0.5279 0.0000
+        }
+        "jaw_clencher"        
+        {
+          0.5279 1.0000
+        }
+        "smile"        
+        {
+          0.5279 0.0000
+        }
+      }
+    }
+    event flexanimation "flexx"
+    {
+      time 0.022222 4.844444
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.5279 0.3500
+        }
+        {
+          0.5279 0.5000
+        }
+        "lid_droop"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "lid_closer"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "half_closed"        
+        {
+          0.5279 0.0000
+        }
+        "blink"        
+        {
+          0.5279 0.2500
+        }
+        "inner_raiser"         combo        
+        {
+          0.5279 1.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.5279 1.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.5279 1.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "upper_raiser"         combo        
+        {
+          0.5279 0.4300
+        }
+        {
+          0.5279 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.5279 0.0000
+        }
+        "part"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "bite"        
+        {
+          0.5279 0.0000
+        }
+        "jaw_clencher"        
+        {
+          0.5279 1.0000
+        }
+        "smile"        
+        {
+          0.5279 0.0000
+        }
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_02.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "32"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

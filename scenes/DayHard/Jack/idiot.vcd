@@ -1,0 +1,210 @@
+// Choreo version 1
+actor "jack"
+{
+  channel "1"
+  {
+    event lookat "look"
+    {
+      time 0.000000 4.683782
+      param "target_quiui"
+      event_ramp
+      {
+        0.0000 1.0000
+        4.1222 0.8929
+        4.3777 0.4607
+        4.5371 0.3286
+      }
+    }
+  }
+  channel "2"
+  {
+    event flexanimation "flex"
+    {
+      time -0.013333 4.133821
+      param ""
+      event_ramp
+      {
+        0.0000 0.9107
+        3.6938 0.9643
+        4.0158 0.9107
+      }
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.3176 0.0000
+        }
+        {
+          0.3176 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.3176 0.0000
+        }
+        {
+          0.3176 0.5000
+        }
+        "lid_droop"         combo        
+        {
+          0.0976 0.3300
+          0.7189 0.7800
+          1.1965 0.8100
+          1.7488 0.8100
+          2.9103 0.8300
+          3.5674 0.7600
+        }
+        {
+          0.3176 0.5000
+        }
+        "half_closed"        
+        {
+          0.3176 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          0.3176 0.0000
+        }
+        {
+          0.3176 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.2276 0.8500
+          1.5263 0.9800
+          2.2934 0.9000
+          3.6077 0.9000
+        }
+        {
+          0.3176 0.6100
+        }
+        "lowerer"         combo        
+        {
+          0.2436 1.0000
+          3.4736 0.8000
+        }
+        {
+          0.3176 0.0000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.1756 1.0000
+          3.1919 0.7600
+        }
+        {
+          0.3176 0.5000
+        }
+        "dilator"        
+        {
+          0.3176 0.0000
+        }
+        "upper_raiser"         combo        
+        {
+          0.3176 0.0000
+        }
+        {
+          0.3176 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.2236 0.9100
+          3.6613 0.8900
+        }
+        {
+          0.3176 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.3176 0.0000
+        }
+        {
+          0.3176 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.3176 0.0000
+        }
+        "part"         combo        
+        {
+          0.3176 0.0000
+        }
+        {
+          0.3176 0.5000
+        }
+        "jaw_clencher"        
+        {
+          0.3176 1.0000
+          2.6957 0.8900
+          3.3529 0.8600
+          3.5940 0.8000
+        }
+        "jaw_drop"        
+        {
+          0.3176 0.0000
+        }
+        "smile"        
+        {
+          0.3176 1.0000
+          3.3663 0.8700
+        }
+        "lower_lip"        
+        {
+          0.3176 0.0000
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+          0.3176 0.4900
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.3176 0.3900
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.3176 0.5500
+        }
+        "eyes_updown"         range 30.0 -30.0        
+        {
+          0.3176 0.4600
+        }
+        "eyes_rightleft"         range 30.0 -30.0        
+        {
+          0.3176 0.4400
+          0.8605 0.3800
+          1.0600 0.4300
+          1.1266 0.4900
+        }
+        "body_rightleft"         range 30.0 -30.0        
+        {
+          0.3176 0.5000
+        }
+      }
+    }
+  }
+  channel "3"
+  {
+    event face "face"
+    {
+      time 0.000000 4.388889
+      param "cam_reprise2"
+      event_ramp
+      {
+        0.0533 0.8036
+        0.1489 0.9107
+        3.4200 1.0000
+        3.8178 0.8469
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_02.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "54"
+  "ExpressionTool" "16"
+  "GestureTool" "100"
+  "RampTool" "90"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

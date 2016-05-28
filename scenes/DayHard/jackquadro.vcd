@@ -1,0 +1,220 @@
+// Choreo version 1
+actor "Jack_z"
+{
+  channel "what"
+  {
+    event flexanimation "flex2"
+    {
+      time 0.006667 2.993333
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.6845 1.0000
+        }
+        {
+          0.6845 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.6845 1.0000
+        }
+        {
+          0.6845 0.5000
+        }
+        "lid_droop"         combo        
+        {
+          0.6845 0.0000
+        }
+        {
+          0.6845 0.5000
+        }
+        "lid_closer"         combo        
+        {
+          0.6845 0.0000
+        }
+        {
+          0.6845 0.5000
+        }
+        "half_closed"        
+        {
+          0.6845 0.0000
+        }
+        "blink"        
+        {
+          0.6008 0.1800
+          0.6396 0.9700
+          0.8648 1.0000
+          1.0345 0.9505
+          1.1692 0.0792
+        }
+        "inner_raiser"         combo        
+        {
+          0.6845 0.0000
+        }
+        {
+          0.6845 1.0000
+        }
+        "outer_raiser"         combo        
+        {
+          0.6845 0.0000
+        }
+        {
+          0.6845 0.0000
+        }
+        "lowerer"         combo        
+        {
+          0.6845 1.0000
+        }
+        {
+          0.6845 1.0000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.6845 0.0000
+        }
+        {
+          0.6845 0.5000
+        }
+        "wrinkler"        
+        {
+          0.6845 1.0000
+        }
+        "dilator"        
+        {
+          0.6845 0.5500
+        }
+        "upper_raiser"         combo        
+        {
+          0.6845 0.0000
+        }
+        {
+          0.6845 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.6845 0.0000
+        }
+        {
+          0.6845 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.6845 1.0000
+        }
+        {
+          0.6845 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.6845 0.0000
+        }
+        "part"         combo        
+        {
+          0.6845 1.0000
+        }
+        {
+          0.6845 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.6845 0.1900
+        }
+        {
+          0.6845 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.6845 1.0000
+        }
+        {
+          0.6845 0.5000
+        }
+        "stretcher"         combo        
+        {
+          0.6845 0.0000
+        }
+        {
+          0.6845 0.5000
+        }
+        "bite"        
+        {
+          0.6845 0.0000
+        }
+        "presser"        
+        {
+          0.6845 0.0000
+        }
+        "tightener"        
+        {
+          0.6845 0.0000
+        }
+        "jaw_clencher"        
+        {
+          0.6845 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.6845 1.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.6845 0.0000
+        }
+        {
+          0.6845 0.5000
+        }
+        "lower_lip"        
+        {
+          0.6845 1.0000
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.6845 0.2100
+        }
+      }
+    }
+  }
+  channel "aim"
+  {
+    event generic "ai"
+    {
+      time 3.060606 4.901515
+      param "AI_AIM"
+      param2 "quadro"
+    }
+  }
+  channel "face"
+  {
+    event face "face"
+    {
+      time 0.007576 4.878788
+      param "quadro"
+    }
+  }
+  channel "face2"
+  {
+    event lookat "2"
+    {
+      time 0.015152 4.810607
+      param "quadro"
+    }
+  }
+  channel "spara"
+  {
+  }
+  faceposermodel "models\Humans\Group02\male_02.mdl"
+}
+
+mapname "maps\DayHardpart4_b.bsp"
+scalesettings
+{
+  "CChoreoView" "88"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

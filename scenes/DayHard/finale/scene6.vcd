@@ -1,0 +1,218 @@
+// Choreo version 1
+actor "Morgan_2"
+{
+  channel "smile"
+  {
+    event flexanimation "f1"
+    {
+      time 0.013333 6.272592
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.7253 0.0800
+        }
+        {
+          0.7253 0.5000
+        }
+        "half_closed"        
+        {
+          0.7253 0.0000
+        }
+        "blink"        
+        {
+          0.7253 0.2100
+        }
+        "inner_raiser"         combo        
+        {
+          0.7253 0.3000
+        }
+        {
+          0.7253 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.7253 0.0000
+        }
+        {
+          0.7253 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.7253 0.0000
+        }
+        {
+          0.7253 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.7253 0.4400
+        }
+        {
+          0.7253 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.7253 0.6500
+        }
+        {
+          0.7253 0.2500
+        }
+        "stretcher"         combo        
+        {
+          0.7253 0.1900
+        }
+        {
+          0.7253 0.5000
+        }
+        "bite"        
+        {
+          0.7253 0.0000
+        }
+        "smile"        
+        {
+          0.7253 0.0000
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.7253 0.4500
+          2.1799 0.4100
+          3.1707 0.4000
+          4.6285 0.3700
+          6.0985 0.4100
+          6.2138 0.4100
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.7253 0.5400
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+        }
+      }
+    }
+  }
+  channel "look"
+  {
+    event lookat "llok96"
+    {
+      time 1.372197 3.673544
+      param "Camera11"
+      event_ramp
+      {
+        0.4900 0.9524
+        2.0310 0.8730
+      }
+    }
+  }
+  channel "look"
+  {
+    event face "face"
+    {
+      time 3.368254 6.233333
+      param "alessia"
+      event_ramp
+      {
+        0.0680 0.4022
+        0.2040 0.6857
+        1.4664 0.7429
+        1.4979 0.7143
+      }
+      lockbodyfacing
+    }
+  }
+  channel "smile"
+  {
+    event flexanimation "flex"
+    {
+      time 2.120346 6.265368
+      param ""
+      event_ramp
+      {
+        0.2620 0.7935
+        3.8745 0.8370
+      }
+      flexanimations samples_use_time
+      {
+        "cheek_raiser"         combo        
+        {
+          0.3498 0.5100
+        }
+        {
+          0.3498 0.5000
+        }
+        "smile"        
+        {
+          0.3498 0.5700
+          3.4764 0.6300
+        }
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_07.mdl"
+}
+
+actor "Alessia"
+{
+  channel "smile"
+  {
+    event flexanimation "ff"
+    {
+      time 0.009524 5.566667
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_closer"         combo        
+        {
+          0.4742 0.0800
+        }
+        {
+          0.4742 0.5000
+        }
+        "inner_raiser"         combo        
+        {
+          0.4742 0.6900
+        }
+        {
+          0.4742 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.4742 0.6100
+        }
+        {
+          0.4742 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.4742 0.5700
+        }
+        {
+          0.4742 0.4400
+        }
+      }
+    }
+  }
+  channel "smile"
+  {
+    event lookat "lok"
+    {
+      time 0.020202 6.227273
+      param "Morgan_2"
+    }
+  }
+  faceposermodel "models\alyx.mdl"
+}
+
+mapname "maps\Finale.bsp"
+scalesettings
+{
+  "CChoreoView" "42"
+  "ExpressionTool" "10"
+  "GestureTool" "100"
+  "RampTool" "36"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

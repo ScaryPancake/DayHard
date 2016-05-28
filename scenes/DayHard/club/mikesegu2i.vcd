@@ -1,0 +1,131 @@
+// Choreo version 1
+actor "Mike"
+{
+  channel "face"
+  {
+    event flexanimation "flex"
+    {
+      time 0.000000 15.000000
+      param ""
+      flexanimations samples_use_time
+      {
+        "lowerer"         combo        
+        {
+          0.5515 1.0000
+          14.5819 0.9500
+        }
+        {
+          0.5515 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.5515 1.0000
+          14.8050 0.9400
+        }
+        {
+          0.5515 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.5515 1.0000
+          14.3930 0.9700
+        }
+        {
+          0.5515 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.5515 0.2100
+        }
+        "part"         combo        
+        {
+          0.5515 0.0000
+        }
+        {
+          0.5515 0.5000
+        }
+        "bite"        
+        {
+          0.5515 0.0000
+        }
+        "smile"        
+        {
+          0.5515 0.0000
+        }
+      }
+    }
+  }
+  channel "face"
+  {
+    event moveto "move"
+    {
+      time 0.000000 15.000000
+      param "!player"
+      param2 "Run"
+      distancetotarget 73.00
+    }
+  }
+  channel "seq"
+  {
+    event face "face"
+    {
+      time 0.200000 8.633333
+      param "!enemy"
+      event_ramp
+      {
+        0.0340 0.5211
+        0.2260 0.7887
+        0.7580 0.7887
+        1.1100 0.9155
+        3.5260 0.8592
+        3.8320 0.6761
+        3.9260 0.5493
+        4.4960 0.5775
+        4.6880 0.7324
+        4.9420 0.7324
+        6.4480 0.7465
+        7.3820 0.7606
+        8.0360 0.6197
+      }
+    }
+  }
+  channel "enemylook"
+  {
+    event lookat "look"
+    {
+      time 9.500001 14.099999
+      param "!enemy"
+      event_ramp
+      {
+        0.0860 0.2639
+        0.4180 0.6250
+        0.6720 0.8194
+        3.7846 0.5694
+      }
+    }
+    event lookat "look"
+    {
+      time 0.166668 8.633333
+      param "!enemy"
+      event_ramp
+      {
+        0.0860 0.2639
+        0.4180 0.6250
+        0.6720 0.8194
+        7.6513 0.5694
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_07.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "20"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

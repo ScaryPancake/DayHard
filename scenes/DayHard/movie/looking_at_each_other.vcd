@@ -1,0 +1,38 @@
+// Choreo version 1
+actor "Movie_actor1"
+{
+  channel "look"
+  {
+    event face "l"
+    {
+      time 0.011494 6.959771
+      param "movie_actor2"
+      lockbodyfacing
+    }
+  }
+}
+
+actor "Movie_actor2"
+{
+  channel "look"
+  {
+    event face "h"
+    {
+      time 0.011495 6.971264
+      param "movie_actor1"
+      lockbodyfacing
+    }
+  }
+}
+
+mapname "maps\horro_flick.bsp"
+scalesettings
+{
+  "CChoreoView" "58"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

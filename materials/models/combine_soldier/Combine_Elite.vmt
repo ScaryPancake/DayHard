@@ -1,0 +1,6 @@
+"VertexLitGeneric"
+{
+	// Original shader: VertexLitTexture
+	"$basetexture" "models/combine_soldier/Combine_Elite"
+	"$halflambert" 1
+}

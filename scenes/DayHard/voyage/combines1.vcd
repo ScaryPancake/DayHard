@@ -1,0 +1,97 @@
+// Choreo version 1
+actor "combine_engineer"
+{
+  channel "1"
+  {
+  }
+  channel "2"
+  {
+  }
+}
+
+actor "c1"
+{
+  channel "1"
+  {
+    event lookat "look"
+    {
+      time 0.133333 1.386666
+      param "c2"
+      event_ramp
+      {
+        0.2500 1.0000
+        1.0140 0.9683
+      }
+    }
+  }
+  channel "2"
+  {
+    event moveto "move"
+    {
+      time 1.166666 1.666666
+      param "combine_engineer"
+      param2 "Run"
+      distancetotarget 39.00
+    }
+    event face "face"
+    {
+      time 1.540000 2.333334
+      param "combine_engineer"
+      event_ramp
+      {
+        0.0680 0.8889
+        0.6993 0.9048
+      }
+    }
+  }
+  faceposermodel "models\Police.mdl"
+}
+
+actor "c2"
+{
+  channel "2"
+  {
+    event lookat "look"
+    {
+      time 0.120000 1.340000
+      param "c1"
+      event_ramp
+      {
+        0.2380 1.0000
+        0.9820 1.0000
+      }
+    }
+  }
+  channel "1"
+  {
+    event moveto "movee"
+    {
+      time 1.186667 1.726667
+      param "combine_engineer"
+      param2 "Run"
+      distancetotarget 29.00
+    }
+    event face "face"
+    {
+      time 1.540000 2.413333
+      param "combine_engineer"
+      event_ramp
+      {
+        0.1700 0.9365
+        0.7140 0.9365
+      }
+    }
+  }
+  faceposermodel "models\Police.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

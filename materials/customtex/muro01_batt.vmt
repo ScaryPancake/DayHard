@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+{
+	"$detail" "detail/detail_noise1"
+	"$detailscale" 30
+	"$basetexture" "customtex/muro01_batt"
+	"$surfaceprop" "plaster"
+	"%keywords" "dayhard"
+}

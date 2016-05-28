@@ -1,0 +1,10 @@
+"WorldVertexTransition"
+{
+	// smanu85
+	"$basetexture" "nature/grassfloor002a"
+	"$basetexture2" "s85/terracroata"
+	"%tooltexture" "s85/terracroata"
+        "$basetexturetransform" "center .5 .5 scale 1 1 rotate 0  translate 0 0"
+        "$basetexturetransform2" "center .5 .5 scale 4 4 rotate 0 translate 0 0"
+	"%keywords" "dayhard"
+}

@@ -1,0 +1,472 @@
+// Choreo version 1
+actor "police_funivia2"
+{
+  channel "1"
+  {
+    event moveto "move"
+    {
+      time 0.000000 90.000000
+      param "genact5"
+      param2 "Walk"
+      distancetotarget 28.00
+    }
+  }
+  channel "2"
+  {
+    event face "ffre"
+    {
+      time 0.000000 50.000000
+      param "genact5"
+    }
+  }
+}
+
+actor "genact5"
+{
+  channel "1"
+  {
+    event face "face"
+    {
+      time 0.000000 80.000000
+      param "genact5"
+    }
+  }
+  channel "2"
+  {
+    event moveto "move"
+    {
+      time 0.000000 90.000000
+      param "genact4"
+      param2 "Walk"
+      distancetotarget 28.00
+    }
+  }
+}
+
+actor "genact4"
+{
+  channel "1"
+  {
+  }
+}
+
+actor "genact1"
+{
+  channel "1"
+  {
+    event sequence "seq"
+    {
+      time 0.000000 100.000000
+      param "canals_arlene_tinker"
+    }
+  }
+  channel "2"
+  {
+  }
+}
+
+actor "genact3"
+{
+  channel "3"
+  {
+    event sequence "seq"
+    {
+      time 0.000000 100.000000
+      param "canals_arlene_tinker"
+    }
+    event face "face"
+    {
+      time 11.166667 20.416668
+      param "!player"
+      event_ramp
+      {
+        0.0640 0.3000
+        0.3760 0.7571
+        4.1222 0.9429
+        5.9444 0.7143
+      }
+    }
+    event lookat "look"
+    {
+      time 21.583334 96.500000
+      param "target_rocca"
+      event_ramp
+      {
+        0.3600 0.2714
+        1.7800 0.8143
+        5.0400 1.0000
+        72.3867 0.9857
+        73.9867 0.8857
+        74.5267 0.6000
+      }
+    }
+  }
+  channel "3"
+  {
+    event face "face"
+    {
+      time 19.833334 98.750000
+      param "target_rocca"
+      event_ramp
+      {
+        0.0640 0.3000
+        0.3760 0.7571
+        4.1222 0.9429
+        75.6111 0.7143
+      }
+    }
+    event lookat "look"
+    {
+      time 10.666666 20.916666
+      param "!player"
+      event_ramp
+      {
+        0.3600 0.2714
+        1.7800 0.8143
+        5.0400 1.0000
+        7.7200 0.9857
+        9.3200 0.8857
+        9.8600 0.6000
+      }
+    }
+  }
+}
+
+actor "genact2"
+{
+  channel "2"
+  {
+    event sequence "seq"
+    {
+      time 0.000000 100.000000
+      param "canals_arlene_tinker"
+    }
+  }
+  channel "2"
+  {
+  }
+}
+
+actor "genact0"
+{
+  channel "1"
+  {
+    event sequence "seqqqqq"
+    {
+      time 0.000000 85.000000
+      param "canals_arlene_tinker"
+    }
+  }
+}
+
+actor "Jack_w"
+{
+  channel "1"
+  {
+    event lookat "look"
+    {
+      time 0.041667 4.777778
+      param "!player"
+      event_ramp
+      {
+        0.2000 0.2429
+        0.7400 1.0000
+        3.1556 0.9559
+        3.8178 0.6496
+      }
+    }
+    event lookat "look"
+    {
+      time 4.397223 14.722226
+      param "target_rocca"
+      event_ramp
+      {
+        0.2000 0.2429
+        0.7400 1.0000
+        9.4067 0.9143
+      }
+    }
+    event lookat "look"
+    {
+      time 22.036110 93.977783
+      param "info_castle"
+      event_ramp
+      {
+        0.2000 0.2429
+        0.7400 1.0000
+        71.0233 0.9143
+      }
+    }
+    event lookat "look"
+    {
+      time 16.286114 23.144447
+      param "!player"
+      event_ramp
+      {
+        0.2000 0.2429
+        0.7400 0.4853
+        1.7889 0.8824
+        5.9400 0.9143
+      }
+    }
+    event lookat "look"
+    {
+      time 13.397225 17.922226
+      param "info_castle"
+      event_ramp
+      {
+        0.2000 0.2429
+        0.7400 1.0000
+        3.6067 0.9143
+      }
+    }
+  }
+  channel "2"
+  {
+    event face "face"
+    {
+      time 0.041667 4.727777
+      param "!player"
+      event_ramp
+      {
+        0.1600 0.2571
+        0.5200 0.5714
+        1.2400 0.8143
+        1.7600 0.9429
+        2.5911 0.9000
+        3.0800 0.9571
+        3.6111 0.8143
+        4.6111 0.4143
+      }
+    }
+    event face "face"
+    {
+      time 4.375000 14.283332
+      param "target_rocca"
+      event_ramp
+      {
+        0.1600 0.2571
+        0.5200 0.5714
+        1.2400 0.8143
+        1.7600 0.9429
+        3.0800 0.9571
+        7.8134 0.9000
+        8.8334 0.8143
+        9.8334 0.4143
+      }
+    }
+    event face "face"
+    {
+      time 12.863889 18.105556
+      param "info_castle"
+      event_ramp
+      {
+        0.1600 0.2571
+        0.5200 0.5714
+        1.2400 0.8143
+        1.7600 0.9429
+        3.0800 0.9571
+        3.1467 0.9000
+        4.1667 0.8143
+        5.1667 0.4143
+      }
+    }
+    event face "face"
+    {
+      time 36.974998 94.050003
+      param "!player"
+      event_ramp
+      {
+        0.1600 0.2571
+        0.5200 0.5714
+        1.2400 0.8143
+        1.7600 0.9429
+        54.9134 0.9571
+        54.9801 0.9000
+        56.0001 0.8143
+        57.0001 0.4143
+      }
+    }
+    event face "face"
+    {
+      time 21.836107 39.994446
+      param "info_castle"
+      event_ramp
+      {
+        0.1600 0.2571
+        0.5200 0.5714
+        1.2400 0.8143
+        1.7600 0.9429
+        15.9967 0.9571
+        16.0634 0.9000
+        17.0834 0.8143
+        18.0834 0.4143
+      }
+    }
+  }
+  channel "3"
+  {
+    event sequence "seqqq"
+    {
+      time 0.000000 6.338889
+      param "scaredidle"
+      event_ramp
+      {
+        0.3400 0.2059
+        0.8200 0.3529
+        1.7800 0.4412
+        2.4000 0.4559
+        3.1789 0.4559
+        3.8738 0.5147
+        4.1200 0.4559
+        4.3490 0.4706
+        4.6589 0.3824
+        5.2389 0.2353
+        5.7789 0.1765
+      }
+    }
+    event sequence "seqqq"
+    {
+      time 8.911111 11.977777
+      param "crouchidlehide"
+      event_ramp
+      {
+        0.3400 0.3235
+        0.8200 0.6911
+        2.9467 0.6471
+      }
+    }
+    event sequence "seqqq"
+    {
+      time 11.127778 24.744442
+      param "crouchidlehide"
+      event_ramp
+      {
+        0.1200 0.6618
+        0.7800 0.8824
+        12.3067 0.8676
+        12.8667 0.7059
+      }
+    }
+    event sequence "seqqq"
+    {
+      time 1.666666 3.966666
+      param "G_righthandheavy"
+      event_ramp
+      {
+        0.3400 0.2059
+        0.8200 0.3529
+        1.7800 0.4412
+      }
+      fixedlength
+    }
+    event sequence "seqqq"
+    {
+      time 20.244444 95.050003
+      param "scaredidle"
+      event_ramp
+      {
+        0.3400 0.2059
+        0.8200 0.3529
+        1.7800 0.4412
+        2.4000 0.4559
+        4.1200 0.4559
+        69.8256 0.5147
+        70.7856 0.4706
+        71.6456 0.4559
+        73.1256 0.3824
+        73.7056 0.2353
+        74.2456 0.1765
+      }
+    }
+  }
+  channel "54"
+  {
+    event flexanimation "ddas"
+    {
+      time 0.000000 96.333336
+      param ""
+      flexanimations samples_use_time
+      {
+        "outer_raiser"         combo        
+        {
+          0.3684 0.7000
+        }
+        {
+          0.3684 0.0500
+        }
+        "lowerer"         combo        
+        {
+          0.2351 0.7200
+          0.6419 0.8500
+          2.8459 0.9300
+          11.9348 0.8900
+          33.0251 0.8800
+          44.9054 0.8200
+          48.9381 0.7800
+          80.3762 0.7400
+        }
+        {
+          0.3684 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.3684 0.5100
+          1.7439 0.8500
+          3.4878 0.9600
+          23.2156 0.9400
+          41.3086 0.9000
+          49.8580 0.8900
+          80.8122 0.8400
+        }
+        {
+          0.3684 0.5000
+        }
+        "presser"        
+        {
+          0.3684 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.3684 0.0000
+        }
+        "smile"        
+        {
+          24.8788 0.2500
+          44.0951 0.2800
+          93.2921 0.0300
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+          0.3684 0.4900
+          2.5069 0.3700
+          22.3437 0.3200
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.3684 0.3600
+          2.3979 0.3600
+          5.5587 0.3200
+          19.8368 0.3900
+          33.8970 0.4700
+          63.0533 0.5800
+          79.8383 0.5000
+          85.3970 0.5100
+          90.3017 0.5200
+        }
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_07.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "2"
+  "ExpressionTool" "2"
+  "GestureTool" "100"
+  "RampTool" "18"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

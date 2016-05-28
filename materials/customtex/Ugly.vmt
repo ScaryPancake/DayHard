@@ -1,0 +1,8 @@
+"UnlitGeneric"
+{
+
+      "$basetexture" "customtex/Ugly"
+      "$alphatest" 1
+      "$nomip" 1
+      "$additive" 1
+}

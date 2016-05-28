@@ -1,0 +1,87 @@
+// Choreo version 1
+actor "jackcarver"
+{
+  channel "1"
+  {
+    event lookat "look"
+    {
+      time 0.006666 52.192379
+      param "target_movie"
+      event_ramp
+      {
+        0.0180 0.2647
+        0.0760 0.6029
+        0.1820 0.5294
+        0.2560 0.3676
+        0.3540 0.3971
+        0.4620 0.6471
+        0.5580 0.9412
+        50.1667 0.8824
+      }
+    }
+  }
+  channel "2"
+  {
+    event face "face"
+    {
+      time 0.000000 51.866665
+      param "target_movie"
+      event_ramp
+      {
+        0.2000 0.2647
+        0.8000 0.5000
+        2.4000 0.7206
+        5.9000 1.0000
+        39.9001 1.0000
+        45.4001 0.9559
+        49.5001 0.6176
+      }
+    }
+  }
+  channel "3"
+  {
+    event flexanimation "flex"
+    {
+      time 0.200000 52.383331
+      param ""
+      event_ramp
+      {
+        0.5000 0.2941
+        2.2000 0.8088
+        3.9000 0.9559
+        46.2833 1.0000
+        50.0833 0.7941
+        51.4833 0.5588
+      }
+      flexanimations samples_use_time
+      {
+        "lowerer"         combo        
+        {
+          0.3382 1.0000
+          21.8182 0.8000
+        }
+        {
+          0.3382 0.5000
+        }
+        "smile"        
+        {
+          0.3382 0.4000
+          19.7455 0.8100
+        }
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group03m\Male_04.mdl"
+}
+
+mapname "maps\dayhardpart1.bsp"
+scalesettings
+{
+  "CChoreoView" "4"
+  "RampTool" "2"
+  "ExpressionTool" "2"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

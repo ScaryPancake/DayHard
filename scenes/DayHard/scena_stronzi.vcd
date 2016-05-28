@@ -1,0 +1,60 @@
+// Choreo version 1
+actor "stronzo1"
+{
+  channel "1"
+  {
+    event sequence "seq"
+    {
+      time 0.000000 50.000000
+      param "CrouchIdle"
+    }
+  }
+  channel "2"
+  {
+    event lookat "look"
+    {
+      time -0.007752 50.000000
+      param "!player"
+    }
+  }
+  channel "3"
+  {
+    event face "face"
+    {
+      time 0.038760 50.000000
+      param "!player"
+    }
+  }
+  faceposermodel "models\Combine_Soldier_PrisonGuard.mdl"
+}
+
+actor "stronzo2"
+{
+  channel "1"
+  {
+    event sequence "sew"
+    {
+      time 0.000000 50.000000
+      param "CrouchIdle"
+    }
+  }
+  channel "2"
+  {
+    event face "face"
+    {
+      time 0.000000 50.000000
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "82"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

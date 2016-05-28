@@ -1,0 +1,249 @@
+// Choreo version 1
+actor "Jack_w"
+{
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.129630 19.888897
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.5391 1.0000
+        }
+        {
+          0.5391 0.5000
+        }
+        "lid_closer"         combo        
+        {
+          0.5391 0.1000
+        }
+        {
+          0.5391 0.5000
+        }
+        "half_closed"        
+        {
+          0.5391 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          0.5391 0.0000
+        }
+        {
+          0.5391 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.5391 1.0000
+        }
+        {
+          0.5391 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.5391 1.0000
+        }
+        {
+          0.5391 0.5000
+        }
+        "wrinkler"        
+        {
+          0.5391 0.6300
+        }
+        "dilator"        
+        {
+          0.5391 0.0900
+        }
+        "corner_puller"         combo        
+        {
+          0.5391 0.0000
+        }
+        {
+          0.5391 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.5391 0.0000
+        }
+        "part"         combo        
+        {
+          0.5391 0.0000
+        }
+        {
+          0.5391 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.5391 0.0000
+        }
+        {
+          0.5391 0.5000
+        }
+        "stretcher"         combo        
+        {
+          0.5391 0.3000
+        }
+        {
+          0.5391 0.5000
+        }
+        "bite"        
+        {
+          0.5391 0.0000
+        }
+        "presser"        
+        {
+          0.5391 0.0000
+        }
+        "tightener"        
+        {
+          0.5391 0.0000
+        }
+        "lower_lip"        
+        {
+          0.5391 0.0000
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.5391 0.3700
+        }
+        "eyes_updown"         range 30.0 -30.0        
+        {
+          0.5391 0.5700
+        }
+        "eyes_rightleft"         range 30.0 -30.0        
+        {
+          0.5391 0.5000
+          19.6818 0.7300
+        }
+        "gesture_rightleft"         range -1.0 1.0        
+        {
+          0.5391 0.5100
+        }
+      }
+    }
+  }
+  channel "follow"
+  {
+    event moveto "move"
+    {
+      time 0.000000 20.000000
+      param "!player"
+      param2 "Run"
+      distancetotarget 68.00
+    }
+  }
+  channel "look"
+  {
+    event lookat "look_at_me"
+    {
+      time 0.111108 6.666667
+      param "!player"
+      event_ramp
+      {
+        0.8937 0.3571
+        2.0143 0.7794
+        4.4936 0.9524
+      }
+    }
+    event lookat "look"
+    {
+      time 5.703704 11.425925
+      param "sniper_guy"
+      event_ramp
+      {
+        0.5434 0.2259
+        1.2000 0.4853
+        1.8000 0.8824
+        4.8857 0.8676
+        5.4293 0.3773
+      }
+    }
+    event lookat "look"
+    {
+      time 14.259259 19.981480
+      param "nonno"
+      event_ramp
+      {
+        0.1720 0.8730
+        5.4293 0.7302
+      }
+    }
+    event lookat "ioio"
+    {
+      time 10.814816 14.833335
+      param "!player"
+      event_ramp
+      {
+        0.5191 0.6230
+        3.7000 0.5719
+      }
+    }
+  }
+  channel "fff"
+  {
+    event sequence "sss"
+    {
+      time 0.037037 19.944445
+      param "scaredidle"
+      event_ramp
+      {
+        0.4000 0.2794
+        1.0457 0.6354
+        2.4286 0.8676
+        3.9500 0.9412
+        16.4000 0.9559
+        17.9667 0.7500
+        19.2071 0.3583
+      }
+    }
+  }
+  channel "face"
+  {
+    event face "face"
+    {
+      time 12.814816 16.759260
+      param "!player"
+      event_ramp
+      {
+        0.9900 0.6226
+        2.3852 0.7353
+        3.2519 0.5147
+      }
+    }
+    event face "face"
+    {
+      time 0.888890 7.611111
+      param "!player"
+      event_ramp
+      {
+        0.5614 0.2843
+        2.8000 0.6618
+        4.3968 0.5588
+        5.8111 0.2794
+      }
+    }
+    event face "face"
+    {
+      time 7.814816 11.907408
+      param "sniper_guy"
+      event_ramp
+      {
+        0.5900 0.6667
+      }
+    }
+  }
+}
+
+mapname "maps\DayHardpart4.bsp"
+scalesettings
+{
+  "CChoreoView" "18"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "6"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,8 @@
+"LightmappedGeneric"
+
+{
+
+      "$basetexture" "customtex/poster_guns"
+        "$decal" 1
+       "$decalscale" 0.20
+}

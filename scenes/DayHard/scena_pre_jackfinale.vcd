@@ -1,0 +1,176 @@
+// Choreo version 1
+actor "Jack_z"
+{
+  channel "look"
+  {
+    event face "face"
+    {
+      time 0.006667 6.003839
+      param "breen_guard2"
+    }
+  }
+  channel "move"
+  {
+    event moveto "mmmm"
+    {
+      time 0.020202 6.005050
+      param "breen_guard2"
+      param2 "Run"
+      distancetotarget 86.00
+    }
+  }
+  channel "look"
+  {
+    event lookat "lookp"
+    {
+      time 1.939394 6.015152
+      param "!player"
+      event_ramp
+      {
+        0.1560 0.9365
+        3.7340 0.6984
+      }
+    }
+    event lookat "look"
+    {
+      time 0.010101 2.297980
+      param "!enemy"
+      event_ramp
+      {
+        0.1760 0.8571
+        2.0020 0.9048
+      }
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.010101 6.015151
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.6738 1.0000
+        }
+        {
+          0.6738 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.6738 0.0000
+        }
+        {
+          0.6738 0.5000
+        }
+        "lid_droop"         combo        
+        {
+          0.6738 0.0000
+        }
+        {
+          0.6738 0.5000
+        }
+        "lid_closer"         combo        
+        {
+          0.6738 0.0000
+        }
+        {
+          0.6738 0.5000
+        }
+        "half_closed"        
+        {
+          0.6738 0.0000
+        }
+        "blink"        
+        {
+          0.6738 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          0.6738 0.0000
+        }
+        {
+          0.6738 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.6738 0.0000
+        }
+        {
+          0.6738 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.6738 0.7000
+        }
+        {
+          0.6738 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.6738 1.0000
+          5.9820 0.7000
+        }
+        {
+          0.6738 0.5000
+        }
+        "wrinkler"        
+        {
+          0.6738 0.6400
+        }
+        "upper_raiser"         combo        
+        {
+          0.6738 0.0000
+        }
+        {
+          0.6738 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.6738 0.0000
+        }
+        {
+          0.6738 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.6738 0.7300
+        }
+        "part"         combo        
+        {
+          0.6738 0.0000
+        }
+        {
+          0.6738 0.5000
+        }
+        "tightener"        
+        {
+          0.6738 1.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.6738 0.0000
+        }
+        {
+          0.6738 0.5000
+        }
+        "smile"        
+        {
+          0.6738 0.0000
+        }
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "66"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

@@ -1,0 +1,173 @@
+// Choreo version 1
+actor "Gregori"
+{
+  channel "channel"
+  {
+    event face "face"
+    {
+      time 3.750000 7.083333
+      param "antlionguard"
+      event_ramp
+      {
+        0.4375 0.2113
+        1.5125 0.6620
+        2.7227 0.8873
+        3.2250 0.9014
+      }
+    }
+  }
+  channel "look"
+  {
+    event lookat "look"
+    {
+      time 3.631668 10.791667
+      param "antlionguard"
+      event_ramp
+      {
+        0.0640 0.3099
+        0.5250 0.7606
+        1.1750 0.8310
+        6.2458 0.9296
+        6.5833 0.8028
+        6.7056 0.9577
+      }
+    }
+  }
+  channel "channelsmile"
+  {
+    event flexanimation "flex"
+    {
+      time -0.083333 6.041667
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          3.5406 0.0000
+        }
+        {
+          3.5406 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          3.5406 0.5300
+        }
+        {
+          3.5406 0.5000
+        }
+        "lowerer"         combo        
+        {
+          3.5406 1.0000
+        }
+        {
+          3.5406 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          3.5406 1.0000
+        }
+        {
+          3.5406 1.0000
+        }
+        "corner_depressor"         combo        
+        {
+          3.5406 0.0000
+        }
+        {
+          3.5406 0.5000
+        }
+        "chin_raiser"        
+        {
+          3.5406 0.0000
+        }
+      }
+    }
+    event flexanimation "fle2"
+    {
+      time 3.791667 9.250002
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.3755 0.8200
+          4.6851 1.0000
+        }
+        {
+          4.6851 0.5000
+        }
+        "blink"        
+        {
+          4.6851 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          0.0358 0.9000
+          4.6851 1.0000
+        }
+        {
+          4.6851 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.2772 0.8700
+          4.6851 1.0000
+        }
+        {
+          4.6851 0.5000
+        }
+        "lowerer"         combo        
+        {
+          4.6851 0.0000
+        }
+        {
+          4.6851 0.5000
+        }
+        "dilator"        
+        {
+          4.6851 0.0000
+        }
+        "jaw_clencher"        
+        {
+          4.6851 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.3219 0.8900
+          4.6851 1.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.4828 0.8600
+          4.6851 1.0000
+        }
+        {
+          4.6851 0.5000
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.6974 0.5700
+          4.6851 0.5400
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.4292 0.3900
+          2.6286 0.3700
+          4.6851 0.3500
+        }
+      }
+    }
+  }
+  faceposermodel "models\monk.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "16"
+  "RampTool" "16"
+  "ExpressionTool" "4"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

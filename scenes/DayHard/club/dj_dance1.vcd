@@ -1,0 +1,499 @@
+// Choreo version 1
+actor "dj"
+{
+  channel "1"
+  {
+    event lookat "look"
+    {
+      time 0.014493 1.065218
+      param "Cam_club2"
+      event_ramp
+      {
+        0.0000 0.7917
+        0.3960 0.9861
+        0.8260 0.9444
+        0.9540 0.8611
+      }
+    }
+    event lookat "look2"
+    {
+      time 4.837682 5.985990
+      param "Cam_club2"
+      event_ramp
+      {
+        0.0600 0.4028
+        0.2680 0.9028
+        1.0776 0.9583
+      }
+    }
+    event lookat "f"
+    {
+      time 5.773914 10.326088
+      param "Cam_club2"
+      event_ramp
+      {
+        0.0660 0.4722
+        0.2060 1.0000
+        4.5087 0.9444
+      }
+    }
+    event lookat "look2"
+    {
+      time 0.971014 2.163768
+      param "target_piatti"
+      event_ramp
+      {
+        0.0600 0.4028
+        0.2680 0.9028
+        1.1220 0.9583
+      }
+    }
+    event lookat "f"
+    {
+      time 2.007247 5.037199
+      param "Cam_club2"
+      event_ramp
+      {
+        0.0660 0.4722
+        0.2060 1.0000
+        2.5924 0.9444
+      }
+    }
+    event lookat "look"
+    {
+      time 15.000000 20.125000
+      param "Cam_club2"
+    }
+  }
+  channel "2"
+  {
+    event sequence "seq"
+    {
+      time 12.433331 13.366664
+      param "point"
+      fixedlength
+    }
+    event sequence "se"
+    {
+      time 4.043478 5.043478
+      param "pushplayer"
+      event_ramp
+      {
+        0.0260 0.5278
+        0.2000 0.9167
+        0.6000 0.8056
+        0.8320 0.7083
+        0.9400 0.6667
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 2.851967 3.385300
+      param "ACTIVATEBATON"
+      event_ramp
+      {
+        0.0680 1.0000
+        0.4340 1.0000
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 3.463768 3.963768
+      param "flinch_back1"
+      event_ramp
+      {
+        0.0680 0.5278
+        0.4340 0.5833
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 13.590895 14.090895
+      param "flinch_back1"
+      event_ramp
+      {
+        0.0680 1.0000
+        0.4340 1.0000
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 2.275362 2.775362
+      param "flinch_back1"
+      event_ramp
+      {
+        0.0680 1.0000
+        0.4340 1.0000
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 14.693366 15.193366
+      param "flinch_back1"
+      event_ramp
+      {
+        0.0680 1.0000
+        0.4340 1.0000
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 5.389234 5.922567
+      param "ACTIVATEBATON"
+      event_ramp
+      {
+        0.0680 1.0000
+        0.4340 1.0000
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 6.789234 7.322567
+      param "ACTIVATEBATON"
+      event_ramp
+      {
+        0.0680 1.0000
+        0.4340 1.0000
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 7.567012 8.100346
+      param "ACTIVATEBATON"
+      event_ramp
+      {
+        0.0680 1.0000
+        0.4340 1.0000
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 9.350725 9.850725
+      param "flinch_back1"
+      event_ramp
+      {
+        0.0680 1.0000
+        0.4340 1.0000
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 14.101857 14.601857
+      param "flinch_back1"
+      event_ramp
+      {
+        0.0680 1.0000
+        0.4340 1.0000
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 1.753623 2.253623
+      param "flinch_back1"
+      event_ramp
+      {
+        0.0680 1.0000
+        0.4340 1.0000
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 0.183172 1.116505
+      param "point"
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 10.408696 10.908696
+      param "flinch_back1"
+      event_ramp
+      {
+        0.0680 1.0000
+        0.4340 1.0000
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 1.217391 1.717391
+      param "flinch_back1"
+      event_ramp
+      {
+        0.0680 1.0000
+        0.4340 1.0000
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 9.886957 10.386957
+      param "flinch_back1"
+      event_ramp
+      {
+        0.0680 1.0000
+        0.4340 1.0000
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 11.151967 11.685301
+      param "ACTIVATEBATON"
+      event_ramp
+      {
+        0.0680 1.0000
+        0.4340 1.0000
+      }
+      fixedlength
+    }
+  }
+  channel "3"
+  {
+    event sequence "seq"
+    {
+      time 13.000000 18.458521
+      param "barrelpushidle"
+      event_ramp
+      {
+        0.0300 0.4028
+        0.0960 0.5833
+        0.2480 0.7500
+        0.4720 0.8611
+        0.6720 0.8889
+        0.9860 0.8611
+        1.4760 1.0000
+        1.5140 0.8333
+        1.6200 0.7222
+        1.7640 0.7917
+        3.4230 0.9583
+        3.7510 0.6111
+        3.9290 0.9444
+        4.4793 1.0000
+        5.0313 0.4861
+      }
+    }
+    event sequence "seq"
+    {
+      time 4.287380 5.803369
+      param "barrelpushidle"
+      event_ramp
+      {
+        0.0300 0.4028
+        0.0960 0.5833
+        0.2480 0.6806
+        0.4720 0.7500
+        0.6720 0.8472
+        0.7649 0.9583
+        0.7987 1.0000
+        0.8067 0.4306
+        0.8192 0.8333
+        0.8344 0.9444
+        0.8766 0.7222
+        0.8929 0.6250
+        0.9044 0.6111
+        0.9184 0.9167
+        0.9545 0.7917
+        0.9860 0.8333
+        1.3587 0.4861
+      }
+    }
+    event sequence "seqq"
+    {
+      time 5.766045 8.083437
+      param "idleonfire"
+      event_ramp
+      {
+        0.0360 0.1250
+        0.1400 0.5833
+        0.3140 0.9028
+      }
+    }
+    event sequence "seq"
+    {
+      time 5.919125 9.482733
+      param "barrelpushidle"
+      event_ramp
+      {
+        0.4720 0.3611
+        0.6720 0.4166
+        0.9860 0.0972
+        1.4760 0.2917
+        1.5140 0.2361
+        1.6200 0.3611
+        1.7640 0.2778
+        1.7980 0.2916
+        2.1260 0.6111
+        2.8543 0.4306
+        3.4063 0.2222
+      }
+    }
+    event sequence "seq"
+    {
+      time 0.765641 4.329248
+      param "barrelpushidle"
+      event_ramp
+      {
+        0.0300 0.4028
+        0.0960 0.5833
+        0.2480 0.7500
+        0.4720 0.8611
+        0.6720 0.8889
+        0.9860 0.8611
+        1.4760 1.0000
+        1.5140 0.8333
+        1.6200 0.7222
+        1.7640 0.7917
+        1.7980 0.9583
+        2.1260 0.6111
+        2.3040 0.9444
+        2.8543 1.0000
+        3.4063 0.4861
+      }
+    }
+    event sequence "seq"
+    {
+      time 8.765642 12.329248
+      param "barrelpushidle"
+      event_ramp
+      {
+        0.0300 0.4028
+        0.0960 0.5833
+        0.2480 0.7500
+        0.4720 0.8611
+        0.6720 0.8889
+        0.9860 0.8611
+        1.4760 1.0000
+        1.5140 0.8333
+        1.6200 0.7222
+        1.7640 0.7917
+        1.7980 0.9583
+        2.1260 0.8611
+        2.3040 0.4166
+        2.8543 0.5972
+        3.4063 0.4861
+      }
+    }
+  }
+  channel "4"
+  {
+  }
+}
+
+actor "attore_disco1"
+{
+  channel "1"
+  {
+    event moveto "move"
+    {
+      time 4.792064 7.880953
+      param "attore_disco2"
+      param2 "Walk"
+      distancetotarget 40.00
+    }
+  }
+  channel "2"
+  {
+    event face "face"
+    {
+      time 7.785714 15.555555
+      param "attore_disco2"
+      lockbodyfacing
+    }
+  }
+  channel "3"
+  {
+    event sequence "seq"
+    {
+      time 8.000000 12.833334
+      param "forcescanner"
+      fixedlength
+    }
+  }
+  channel "4"
+  {
+    event lookat "look"
+    {
+      time 8.000000 15.648809
+      param "attore_disco2"
+    }
+  }
+}
+
+actor "attore_disco2"
+{
+  channel "1"
+  {
+    event moveto "move"
+    {
+      time 4.325397 7.880953
+      param "attore_disco1"
+      param2 "Walk"
+      distancetotarget 41.00
+    }
+  }
+  channel "2"
+  {
+    event face "face"
+    {
+      time 7.833333 15.799664
+      param "attore_disco1"
+    }
+  }
+  channel "3"
+  {
+    event sequence "seq"
+    {
+      time 8.000000 15.727943
+      param "idleonfire"
+      event_ramp
+      {
+        0.0140 0.5417
+        0.0620 0.8194
+        5.6876 0.9722
+      }
+    }
+    event sequence "54"
+    {
+      time 8.556666 11.431666
+      param "rappelloop"
+      event_ramp
+      {
+        0.0280 0.4028
+        0.0980 0.8194
+        1.6640 0.8611
+        1.9880 0.4722
+      }
+    }
+  }
+  channel "4"
+  {
+    event lookat "look"
+    {
+      time 7.958333 13.500001
+      param "attore_disco1"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "20"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

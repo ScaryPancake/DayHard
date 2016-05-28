@@ -1,0 +1,12 @@
+"UnlitGeneric"
+{
+	"$basetexture" "console/dayhard_menu"
+	"$vertexcolor" 1
+	"$vertexalpha" 1
+	"$ignorez" 1
+	"$no_fullbright" 1
+	"$nolod" 1
+                  "$nocompress" 1
+                  "$nomip"  1
+
+}

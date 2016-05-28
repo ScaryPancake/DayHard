@@ -1,0 +1,337 @@
+// Choreo version 1
+actor "jackCarver"
+{
+  channel "face"
+  {
+    event flexanimation "flex"
+    {
+      time 0.000000 4.973333
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.3001 0.4900
+        }
+        {
+          0.3001 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.3001 1.0000
+        }
+        {
+          0.3001 0.5000
+        }
+        "lid_droop"         combo        
+        {
+          0.3001 0.0000
+        }
+        {
+          0.3001 0.5000
+        }
+        "lid_closer"         combo        
+        {
+          0.3001 0.0000
+        }
+        {
+          0.3001 0.5000
+        }
+        "blink"        
+        {
+          0.3001 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          0.3001 0.0000
+        }
+        {
+          0.3001 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.3001 1.0000
+        }
+        {
+          0.3001 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.3001 1.0000
+        }
+        {
+          0.3001 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.3001 1.0000
+        }
+        {
+          0.3001 0.5000
+        }
+        "wrinkler"        
+        {
+          0.3001 1.0000
+        }
+        "dilator"        
+        {
+          0.3001 1.0000
+        }
+        "upper_raiser"         combo        
+        {
+          0.3001 0.4600
+        }
+        {
+          0.3001 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.3001 0.0000
+        }
+        {
+          0.3001 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.3001 0.0000
+        }
+        {
+          0.3001 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.3001 0.0000
+        }
+        "puckerer"         combo        
+        {
+          0.3001 0.0000
+        }
+        {
+          0.3001 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.3001 0.0000
+        }
+        {
+          0.3001 0.5000
+        }
+        "stretcher"         combo        
+        {
+          0.3001 1.0000
+        }
+        {
+          0.3001 0.5000
+        }
+        "bite"        
+        {
+          0.3001 0.0000
+        }
+        "presser"        
+        {
+          0.3001 0.0000
+        }
+        "tightener"        
+        {
+          0.3001 0.0000
+        }
+        "jaw_clencher"        
+        {
+          0.3001 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.3001 1.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.3001 1.0000
+        }
+        {
+          0.3001 0.5000
+        }
+        "smile"        
+        {
+          0.3001 0.0000
+        }
+        "lower_lip"        
+        {
+          0.3001 0.0000
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+          0.3001 0.5500
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.3001 0.0000
+        }
+        "eyes_updown"         range 30.0 -30.0        
+        {
+          0.3001 0.7700
+        }
+        "gesture_updown"         range -1.0 1.0        
+        {
+          0.3001 0.5600
+        }
+        "gesture_rightleft"         range -1.0 1.0        
+        {
+          0.3001 0.5100
+        }
+      }
+    }
+  }
+  channel "point_to"
+  {
+    event lookat "look"
+    {
+      time 0.020000 4.533333
+      param "jack_guardaQUI"
+    }
+  }
+}
+
+actor "Morgan_c"
+{
+  channel "aaaa"
+  {
+    event flexanimation "5"
+    {
+      time 0.006667 4.920000
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.1544 1.0000
+        }
+        {
+          0.1544 0.5000
+        }
+        "lid_closer"         combo        
+        {
+          0.1544 0.0000
+        }
+        {
+          0.1544 0.5000
+        }
+        "half_closed"        
+        {
+          0.1544 1.0000
+        }
+        "blink"        
+        {
+          0.1544 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          0.1544 0.0000
+        }
+        {
+          0.1544 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.1544 1.0000
+        }
+        {
+          0.1544 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.1544 1.0000
+        }
+        {
+          0.1544 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.1544 0.7300
+        }
+        {
+          0.1544 0.5000
+        }
+        "wrinkler"        
+        {
+          0.1544 1.0000
+        }
+        "dilator"        
+        {
+          0.1544 0.0000
+        }
+        "upper_raiser"         combo        
+        {
+          0.1544 1.0000
+        }
+        {
+          0.1544 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.1544 0.0000
+        }
+        {
+          0.1544 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.1544 0.0000
+        }
+        "part"         combo        
+        {
+          0.1544 0.0000
+        }
+        {
+          0.1544 0.5000
+        }
+        "presser"        
+        {
+          0.1544 0.0000
+        }
+        "tightener"        
+        {
+          0.1544 0.0000
+        }
+        "jaw_clencher"        
+        {
+          0.1544 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.1544 1.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.1544 1.0000
+        }
+        {
+          0.1544 0.7100
+        }
+        "lower_lip"        
+        {
+          0.1544 0.0000
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+          0.1544 0.6500
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.1544 0.4500
+        }
+      }
+    }
+  }
+}
+
+mapname "maps\dayhardpart1.bsp"
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

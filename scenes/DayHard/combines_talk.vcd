@@ -1,0 +1,66 @@
+// Choreo version 1
+actor "Morgan_combine"
+{
+  channel "l0ok"
+  {
+    event lookat "j"
+    {
+      time 0.040000 9.411406
+      param "jack_combine"
+    }
+  }
+  channel "seq"
+  {
+    event sequence "seqq"
+    {
+      time 3.628943 4.445610
+      param "gesture_turn_left_45"
+      fixedlength
+    }
+    event sequence "seqq"
+    {
+      time 1.097778 3.264445
+      param "buttonleft"
+      event_ramp
+      {
+        0.3980 0.9855
+        1.6860 0.9565
+      }
+      fixedlength
+    }
+  }
+  faceposermodel "models\Police.mdl"
+}
+
+actor "Jack_combine"
+{
+  channel "look"
+  {
+    event lookat "ll"
+    {
+      time 0.048642 9.895304
+      param "morgan_combine"
+    }
+  }
+  channel "seq"
+  {
+    event sequence "jk"
+    {
+      time 2.855378 4.855378
+      param "harassfront1"
+      fixedlength
+    }
+  }
+  faceposermodel "models\Police.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "54"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

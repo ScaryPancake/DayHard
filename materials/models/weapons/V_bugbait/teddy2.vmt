@@ -1,0 +1,5 @@
+"VertexLitGeneric"
+{
+	"$baseTexture" "Models/Weapons/V_bugbait/teddy2"
+	"$bumpmap" "Models/Weapons/V_bugbait/teddy2_normal"
+}

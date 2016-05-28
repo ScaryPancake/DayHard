@@ -1,0 +1,73 @@
+// Choreo version 1
+actor "Jack_metro"
+{
+  channel "follow"
+  {
+    event moveto "move"
+    {
+      time 0.000000 30.500000
+      param "!player"
+      param2 "Run"
+      distancetotarget 48.00
+    }
+  }
+  channel "posa"
+  {
+    event face "face"
+    {
+      time 7.388888 18.611111
+      param "ciccione"
+      event_ramp
+      {
+        0.4480 0.6932
+        10.6944 0.3636
+      }
+    }
+    event face "faceee"
+    {
+      time 0.055555 8.166667
+      param "traitor1"
+      event_ramp
+      {
+        0.4480 0.6250
+        7.6309 0.5568
+      }
+    }
+    event face "face"
+    {
+      time 17.888889 29.500002
+      param "!player"
+      event_ramp
+      {
+        0.8200 0.7045
+        9.4418 0.5455
+      }
+    }
+  }
+  channel "posa"
+  {
+    event sequence "tr"
+    {
+      time 13.444443 20.111109
+      param "plazathreat2"
+      event_ramp
+      {
+        0.6120 0.7727
+        4.3600 0.8295
+      }
+      fixedlength
+    }
+  }
+  faceposermodel "models\Police.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "12"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

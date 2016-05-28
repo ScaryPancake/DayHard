@@ -1,0 +1,185 @@
+// Choreo version 1
+actor "Jack_2"
+{
+  channel "face"
+  {
+    event flexanimation "flexx"
+    {
+      time 0.000000 6.310607
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_droop"         combo        
+        {
+          0.7060 0.0000
+        }
+        {
+          0.7060 0.5000
+        }
+        "blink"        
+        {
+          0.7060 0.0600
+        }
+        "lowerer"         combo        
+        {
+          0.7060 0.9800
+        }
+        {
+          0.7060 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.7060 0.9800
+        }
+        {
+          0.7060 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.7060 0.8400
+        }
+        {
+          0.7060 0.5000
+        }
+        "jaw_drop"        
+        {
+          0.7060 0.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.7060 1.0000
+        }
+        {
+          0.7060 0.5000
+        }
+        "smile"        
+        {
+          0.7060 0.9800
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.7060 0.1100
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.7060 0.4300
+        }
+        "eyes_updown"         range 30.0 -30.0        
+        {
+          0.7060 0.3900
+        }
+        "body_rightleft"         range 30.0 -30.0        
+        {
+          0.7060 0.5000
+        }
+        "chest_rightleft"         range 30.0 -30.0        
+        {
+          0.7060 0.4000
+        }
+        "head_forwardback"         range 0.2 -0.2        
+        {
+          0.7060 0.8000
+        }
+        "gesture_updown"         range -1.0 1.0        
+        {
+          0.7060 0.3500
+        }
+        "gesture_rightleft"         range -1.0 1.0        
+        {
+          0.7060 0.5700
+        }
+      }
+    }
+  }
+  channel "look"
+  {
+    event lookat "llllok"
+    {
+      time 0.007576 0.689394
+      param "girl2"
+      event_ramp
+      {
+        0.1600 0.8254
+        0.5380 0.8571
+      }
+    }
+    event lookat "llok"
+    {
+      time 0.643940 1.689394
+      param "girl"
+      event_ramp
+      {
+        0.1940 0.8571
+      }
+    }
+    event lookat "lok"
+    {
+      time 1.537879 6.151515
+      param "morgan_2"
+      event_ramp
+      {
+        0.2140 0.7619
+        3.2864 0.8413
+      }
+    }
+  }
+  channel "action"
+  {
+  }
+  faceposermodel "models\Humans\Group02\male_02.mdl"
+}
+
+actor "Morgan_2"
+{
+  channel "smile"
+  {
+    event flexanimation "fff"
+    {
+      time 0.007575 4.626386
+      param ""
+      flexanimations samples_use_time
+      {
+        "outer_raiser"         combo        
+        {
+          0.5236 0.2000
+        }
+        {
+          0.5236 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.5236 0.7500
+        }
+        {
+          0.5236 0.5000
+        }
+      }
+    }
+  }
+  channel "looking"
+  {
+    event lookat "lok"
+    {
+      time 0.317073 4.150407
+      param "alessia"
+      event_ramp
+      {
+        0.2420 0.7778
+        3.3940 0.8889
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_07.mdl"
+}
+
+mapname "maps\Finale.bsp"
+scalesettings
+{
+  "CChoreoView" "82"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

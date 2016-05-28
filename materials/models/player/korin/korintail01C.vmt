@@ -1,0 +1,12 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models/player/korin/korintail01C"
+	"$halflambert" 1
+	"$model" 1
+
+//	"$selfillum" 1
+//	"$nodecal" "1"
+//	"$selfillum" 1
+//	"$normalmapalphaenvmapmask"
+//	"$bumpmap" "models\player\korin/bikini01N"
+}

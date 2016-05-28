@@ -1,0 +1,188 @@
+// Choreo version 1
+actor "ugly_2"
+{
+  channel "faccia"
+  {
+    event flexanimation "flex"
+    {
+      time 0.010752 6.342472
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.0043 0.5100
+          0.0172 1.0000
+        }
+        {
+          0.0172 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.0172 1.0000
+        }
+        {
+          0.0172 0.5000
+        }
+        "lid_closer"         combo        
+        {
+          0.0172 0.0000
+        }
+        {
+          0.0172 0.5000
+        }
+        "half_closed"        
+        {
+          0.0172 1.0000
+        }
+        "blink"        
+        {
+          0.0172 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          0.0172 0.0000
+        }
+        {
+          0.0172 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.0172 0.0000
+        }
+        {
+          0.0172 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.0172 1.0000
+        }
+        {
+          0.0172 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.0172 1.0000
+        }
+        {
+          0.0172 0.5000
+        }
+        "wrinkler"        
+        {
+          0.0172 0.2600
+        }
+        "dilator"        
+        {
+          0.0172 0.0000
+        }
+        "upper_raiser"         combo        
+        {
+          0.0172 0.0000
+        }
+        {
+          0.0172 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.0172 0.9600
+        }
+        {
+          0.0172 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.0172 0.0000
+        }
+        {
+          0.0172 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.0172 0.0000
+        }
+        "part"         combo        
+        {
+          0.0172 1.0000
+        }
+        {
+          0.0172 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.0172 0.0000
+        }
+        {
+          0.0172 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.0172 0.0000
+        }
+        {
+          0.0172 0.5000
+        }
+        "bite"        
+        {
+          0.0172 0.0000
+        }
+      }
+    }
+    event sequence "seq_2"
+    {
+      time 0.010752 4.892473
+      param "idle_angry_melee"
+    }
+    event sequence "seq_3"
+    {
+      time 4.913979 5.713979
+      param "swing"
+      fixedlength
+    }
+  }
+  channel "azione"
+  {
+    event face "guardaANTlion"
+    {
+      time 1.147287 6.328457
+      param "ant_fittizzio"
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_08.mdl"
+}
+
+actor "ant_fittizzio"
+{
+  channel "azione"
+  {
+    event sequence "seq"
+    {
+      time 3.659915 6.326582
+      param "fireattack"
+      fixedlength
+    }
+  }
+  channel "sound"
+  {
+    event speak "raor"
+    {
+      time 3.913979 5.640918
+      param "NPC_AntlionGuard.Roar"
+      fixedlength
+      cctype "cc_master"
+      cctoken ""
+    }
+  }
+  faceposermodel "models\antlion_guard.mdl"
+}
+
+mapname "maps\DayHard_part3.bsp"
+scalesettings
+{
+  "CChoreoView" "62"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

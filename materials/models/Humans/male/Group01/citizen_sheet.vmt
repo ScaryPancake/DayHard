@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+
+{   
+   "$baseTexture" "citizen_sheet"
+   "Proxies"
+   {
+      "ToggleTexture"
+      {
+         "toggleTextureVar" "$baseTexture"
+                     "toggleTextureFrameNumVar" "$frame"
+                     "toggleTextureShouldWrap" "0"
+      }
+   }
+} 

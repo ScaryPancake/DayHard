@@ -1,0 +1,137 @@
+// Choreo version 1
+actor "jackCarver"
+{
+  channel "1"
+  {
+    event moveto "mm"
+    {
+      time 0.020000 13.420256
+      param "!player"
+      param2 "Run"
+      distancetotarget 64.00
+    }
+  }
+  channel "2"
+  {
+    event flexanimation "flex"
+    {
+      time 0.076923 13.371794
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.4249 1.0000
+          0.9216 1.0000
+          1.4869 1.0000
+          2.0224 0.8356
+          3.4017 0.6593
+          7.0636 0.6593
+          8.3455 0.9185
+          10.1455 0.9111
+          11.6455 0.7333
+          12.3000 0.5926
+        }
+        {
+          0.4249 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.4249 0.2600
+          1.0208 0.4300
+          1.5266 0.4100
+          1.8935 0.4600
+          2.3794 0.3700
+          2.7166 0.1900
+        }
+        {
+          0.4249 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.1742 0.2300
+          0.3638 1.0000
+          12.5252 0.9200
+        }
+        {
+          0.4249 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.4249 0.3100
+          0.7728 0.8100
+          1.0505 0.9700
+          2.2009 0.9600
+          12.5082 0.8200
+        }
+        {
+          0.4249 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.4249 0.0000
+        }
+        {
+          0.4249 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.1795 0.5100
+          0.3861 0.9300
+          0.9910 0.9900
+          1.6059 0.9200
+          2.3794 0.7900
+          2.8753 0.8700
+          5.2364 0.8800
+          9.7091 0.8600
+          12.5832 0.7200
+        }
+        {
+          0.4249 0.5000
+        }
+        "bite"        
+        {
+          0.4249 0.0000
+        }
+      }
+    }
+  }
+  channel "3"
+  {
+    event lookat "look"
+    {
+      time 9.487179 13.346153
+      param "!player"
+      event_ramp
+      {
+        0.0420 0.2647
+        0.1460 0.6912
+        1.6593 0.9559
+        3.3083 0.6471
+      }
+    }
+    event lookat "look"
+    {
+      time 0.025640 10.089744
+      param "!enemy"
+      event_ramp
+      {
+        0.0420 0.2647
+        0.1460 0.6912
+        1.6593 0.9559
+        9.5134 0.6471
+      }
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "14"
+  "RampTool" "24"
+  "ExpressionTool" "4"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

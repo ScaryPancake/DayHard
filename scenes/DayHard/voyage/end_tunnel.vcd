@@ -1,0 +1,220 @@
+// Choreo version 1
+actor "Morgan2"
+{
+  channel "1"
+  {
+    event lookat "look"
+    {
+      time 0.000000 3.999038
+      param "jack"
+      event_ramp
+      {
+        0.1399 0.5510
+        0.3737 0.8776
+        0.8424 0.9388
+        3.3361 0.9082
+        3.7624 0.8673
+      }
+    }
+    event lookat "look"
+    {
+      time 3.623016 11.703733
+      param "tunnel"
+      event_ramp
+      {
+        0.1399 0.5510
+        0.3737 0.8776
+        0.8424 0.9388
+        7.4177 0.9082
+        7.8440 0.8673
+      }
+    }
+  }
+  channel "2"
+  {
+    event sequence "seq"
+    {
+      time 1.409062 3.109062
+      param "G_shrug"
+      fixedlength
+    }
+  }
+  channel "3"
+  {
+    event flexanimation "flexioui"
+    {
+      time 0.000000 12.181482
+      param ""
+      flexanimations samples_use_time
+      {
+        "inner_raiser"         combo        
+        {
+          0.4699 1.0000
+        }
+        {
+          0.4699 1.0000
+        }
+        "outer_raiser"         combo        
+        {
+          0.4699 1.0000
+        }
+        {
+          0.4699 1.0000
+        }
+        "lowerer"         combo        
+        {
+          0.4699 0.0000
+        }
+        {
+          0.4699 0.0000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.4699 0.3800
+        }
+        {
+          0.4699 0.5000
+        }
+        "dilator"        
+        {
+          0.4699 0.0000
+        }
+        "upper_raiser"         combo        
+        {
+          0.4699 0.0000
+        }
+        {
+          0.4699 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.4699 0.0000
+        }
+        {
+          0.4699 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.4699 0.0000
+        }
+        {
+          0.4699 0.5000
+        }
+        "part"         combo        
+        {
+          0.4699 0.7500
+          2.3088 0.9400
+          2.5878 0.8200
+          3.4546 0.9300
+          3.6305 0.8700
+          3.9180 0.6100
+          4.1283 0.3200
+          4.2399 0.0900
+        }
+        {
+          0.4699 0.5000
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+          0.4699 1.0000
+        }
+        "head_forwardback"         range 0.2 -0.2        
+        {
+          0.4699 0.3000
+        }
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_07.mdl"
+}
+
+actor "Jack2"
+{
+  channel "1"
+  {
+    event lookat "look"
+    {
+      time 3.288359 11.857143
+      param "tunnel"
+      event_ramp
+      {
+        0.0789 0.5714
+        0.5158 0.8061
+        7.1550 0.8265
+        8.1813 0.8469
+        8.4129 0.7755
+      }
+    }
+    event lookat "look"
+    {
+      time 0.000000 4.007937
+      param "Morgan"
+      event_ramp
+      {
+        0.0789 0.5714
+        0.5158 0.8061
+        2.5942 0.8265
+        3.6205 0.8469
+        3.8521 0.7755
+      }
+    }
+  }
+  channel "2"
+  {
+    event sequence "seq"
+    {
+      time 0.630953 11.818454
+      param "LineIdle02"
+      event_ramp
+      {
+        0.1947 0.3571
+        0.7579 0.7245
+        1.2316 0.9490
+        9.9311 0.9694
+        10.8627 0.5306
+        11.1875 0.0000
+      }
+    }
+  }
+  channel "3"
+  {
+    event flexanimation "flexx"
+    {
+      time 0.000000 11.074075
+      param ""
+      flexanimations samples_use_time
+      {
+        "lowerer"         combo        
+        {
+          0.4592 1.0000
+        }
+        {
+          0.4592 0.5000
+        }
+        "dilator"        
+        {
+          0.4592 1.0000
+        }
+        "corner_puller"         combo        
+        {
+          0.4592 0.0000
+        }
+        {
+          0.4592 0.5000
+        }
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_02.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "18"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "38"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

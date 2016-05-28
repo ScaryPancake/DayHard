@@ -1,0 +1,9 @@
+"LightmappedGeneric"
+{
+	"$basetexture" "customtex/love_boutique_ref"
+	"$surfaceprop" "tile"
+	"%keywords" "dayhard"
+	"$decal" 1
+	"$decalscale" 0.10
+	"$translucent" 1
+}

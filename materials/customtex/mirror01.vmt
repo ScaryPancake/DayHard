@@ -1,0 +1,15 @@
+"LightmappedGeneric"
+{
+
+      "$basetexture" "customtex/mirror01"
+	"%keywords" "dayhard"
+	"$envmap" "env_cubemap"
+	"$basealphaenvmapmask" 1
+	"$envmapcontrast" 1
+	"$envmapsaturation" 1
+	"$envmaptint" "[ .75 .75 .75 ]"
+	"LightmappedGeneric_DX8"
+	{
+		"$envmaptint" "[.45 .45 .45]"
+	}
+}

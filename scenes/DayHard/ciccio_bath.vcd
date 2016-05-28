@@ -1,0 +1,238 @@
+// Choreo version 1
+actor "ciccio"
+{
+  channel "expression"
+  {
+    event flexanimation "arghhh"
+    {
+      time 0.026666 32.500000
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.2318 1.0000
+        }
+        {
+          0.2318 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.2318 0.0000
+        }
+        {
+          0.2318 0.5000
+        }
+        "lid_droop"         combo        
+        {
+          0.2318 0.0000
+        }
+        {
+          0.2318 0.5000
+        }
+        "lid_closer"         combo        
+        {
+          0.2318 0.0000
+        }
+        {
+          0.2318 0.5000
+        }
+        "blink"        
+        {
+          0.2318 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          0.2318 1.0000
+        }
+        {
+          0.2318 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.2318 0.0000
+        }
+        {
+          0.2318 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.2318 0.0000
+        }
+        {
+          0.2318 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.2318 1.0000
+        }
+        {
+          0.2318 0.5000
+        }
+        "wrinkler"        
+        {
+          0.2318 0.1900
+        }
+        "dilator"        
+        {
+          0.2318 0.0000
+        }
+        "upper_raiser"         combo        
+        {
+          0.2318 0.8000
+        }
+        {
+          0.2318 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.2318 0.0000
+        }
+        {
+          0.2318 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.2318 0.0000
+        }
+        {
+          0.2318 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.2318 0.0000
+        }
+        "part"         combo        
+        {
+          0.2318 1.0000
+        }
+        {
+          0.2318 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.2318 0.0000
+        }
+        {
+          0.2318 0.5000
+        }
+        "jaw_clencher"        
+        {
+          0.2318 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.2318 1.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.2318 1.0000
+        }
+        {
+          0.2318 0.5000
+        }
+        "smile"        
+        {
+          0.2318 0.0000
+        }
+        "lower_lip"        
+        {
+          0.2318 0.0000
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+          0.2318 0.5200
+          0.4957 0.6300
+          0.9592 0.5700
+          1.2295 0.4600
+          1.8501 0.4700
+          2.2245 0.4800
+          2.3926 0.5200
+          2.6966 0.5800
+          3.1963 0.5400
+          3.4931 0.5200
+          3.6755 0.5100
+          3.7935 0.4800
+          3.9008 0.4400
+          5.8618 0.5100
+          7.1028 0.5200
+        }
+      }
+    }
+  }
+  channel "ani"
+  {
+    event lookat "look"
+    {
+      time 3.700000 10.342857
+      param "!self"
+      event_ramp
+      {
+        0.1600 0.2535
+        0.6600 0.7746
+        1.1500 0.9014
+        3.3353 0.7746
+        4.9030 0.5915
+      }
+    }
+    event lookat "look"
+    {
+      time 0.000000 4.138095
+      param "!player"
+      event_ramp
+      {
+        0.0400 0.3380
+        0.2000 0.7183
+        0.4300 0.8169
+        0.5680 0.9155
+        2.5389 0.8732
+        2.7582 0.7606
+        3.3000 0.4789
+      }
+    }
+  }
+  channel "2"
+  {
+    event face "face"
+    {
+      time 0.047620 3.833333
+      param "!player"
+      event_ramp
+      {
+        0.0380 0.3380
+        0.1960 0.6901
+        0.4460 0.9577
+      }
+    }
+  }
+  channel "3"
+  {
+    event sequence "seq"
+    {
+      time 0.266667 2.066667
+      param "b_head_back"
+      event_ramp
+      {
+        0.0840 0.1549
+        0.3640 0.4648
+        0.7540 0.9437
+        1.2080 0.9296
+        1.5940 0.8873
+        1.7100 0.6338
+      }
+      fixedlength
+    }
+  }
+  faceposermodel "models\odessa.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "10"
+  "ExpressionTool" "8"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

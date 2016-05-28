@@ -1,0 +1,130 @@
+// Choreo version 1
+actor "engman2"
+{
+  channel "look"
+  {
+    event face "face"
+    {
+      time 2.000000 4.131389
+      param "targetcam_cutz03"
+    }
+    event face "faceeee"
+    {
+      time 0.006944 1.951388
+      param "attore_professionista"
+    }
+  }
+  channel "seq"
+  {
+    event sequence "seq"
+    {
+      time 0.993056 3.026389
+      param "Gesture06"
+      fixedlength
+    }
+  }
+  channel "smile"
+  {
+    event flexanimation "f"
+    {
+      time 0.604167 3.361111
+      param ""
+      flexanimations samples_use_time
+      {
+        "half_closed"        
+        {
+          1.3684 0.0000
+          1.6667 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          1.3684 0.0000
+          1.6667 0.0000
+        }
+        {
+          1.3684 0.5000
+          1.6667 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          1.3684 1.0000
+          1.6667 1.0000
+        }
+        {
+          1.3684 0.5000
+          1.6667 0.5000
+        }
+        "lowerer"         combo        
+        {
+          1.3684 0.0000
+          1.6667 0.0000
+        }
+        {
+          1.3684 0.5000
+          1.6667 0.5000
+        }
+        "stretcher"         combo        
+        {
+          1.3684 1.0000
+          1.6667 1.0000
+        }
+        {
+          1.3684 0.5000
+          1.6667 0.5000
+        }
+        "smile"        
+        {
+          1.3684 0.7400
+          1.6667 0.7400
+        }
+        "lower_lip"        
+        {
+          1.3684 0.0000
+          1.6667 0.0000
+        }
+      }
+    }
+    event flexanimation "ee"
+    {
+      time 1.583334 3.472222
+      param ""
+      event_ramp
+      {
+        0.1540 1.0000
+        1.8444 1.0000
+      }
+      flexanimations samples_use_time
+      {
+      }
+    }
+  }
+  faceposermodel "models\Barney.mdl"
+}
+
+actor "attore_professionista"
+{
+  channel "look"
+  {
+    event lookat "look"
+    {
+      time 0.013889 1.979167
+      param "engman2"
+    }
+    event face "face"
+    {
+      time 2.041667 4.500000
+      param "targetcam_cutz03"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "96"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

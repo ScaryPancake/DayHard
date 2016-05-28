@@ -1,0 +1,209 @@
+// Choreo version 1
+actor "morgan_01"
+{
+  channel "look"
+  {
+    event lookat "lookit"
+    {
+      time 0.000000 4.750000
+      param "camera_11"
+      event_ramp
+      {
+        0.0000 0.9079
+        1.7040 0.8553
+        2.0800 0.7632
+        2.2400 0.4868
+        2.5700 0.1316
+        2.6300 0.0395
+        2.8680 0.0000
+        3.0480 0.0000
+        3.7540 0.0526
+        3.9300 0.1316
+        4.4840 0.7368
+      }
+    }
+    event lookat "look"
+    {
+      time 6.125000 13.083334
+      param "camera_13"
+    }
+  }
+  channel "face"
+  {
+    event flexanimation "flexxx"
+    {
+      time 0.083333 10.458334
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.7625 1.0000
+        }
+        {
+          0.7625 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.7625 0.7000
+        }
+        {
+          0.7625 0.5000
+        }
+        "inner_raiser"         combo        
+        {
+          0.7625 0.0000
+        }
+        {
+          0.7625 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.7625 1.0000
+        }
+        {
+          0.7625 1.0000
+        }
+        "lowerer"         combo        
+        {
+          0.7625 0.4500
+        }
+        {
+          0.7625 1.0000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.7625 0.5600
+        }
+        {
+          0.7625 0.5000
+        }
+        "dilator"        
+        {
+          0.7625 0.4600
+        }
+        "corner_puller"         combo        
+        {
+          0.7625 0.0000
+        }
+        {
+          0.7625 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.7625 0.1600
+        }
+        {
+          0.7625 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.7625 0.0000
+        }
+        "part"         combo        
+        {
+          0.7625 0.0000
+        }
+        {
+          0.7625 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.7625 0.0000
+        }
+        {
+          0.7625 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.7625 0.0000
+        }
+        {
+          0.7625 0.5000
+        }
+        "bite"        
+        {
+          0.7625 1.0000
+        }
+        "presser"        
+        {
+          0.7625 0.0000
+        }
+        "tightener"        
+        {
+          0.7625 0.0000
+        }
+        "jaw_clencher"        
+        {
+          0.7625 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.7625 0.0000
+        }
+        "smile"        
+        {
+          0.7625 0.0000
+        }
+        "lower_lip"        
+        {
+          0.7625 0.0000
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+          0.7625 0.4900
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.7625 0.7200
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.7625 0.5200
+        }
+        "eyes_updown"         range 30.0 -30.0        
+        {
+          0.7625 0.4400
+        }
+      }
+    }
+  }
+  channel "action"
+  {
+    event lookat "lookat"
+    {
+      time 1.833333 3.222222
+      param "mask_Morgan"
+      event_ramp
+      {
+        0.1960 0.2500
+        0.3220 0.6842
+        0.4520 0.8684
+      }
+    }
+    event lookat "lookat"
+    {
+      time 4.250000 6.111111
+      param "mask_Morgan"
+      event_ramp
+      {
+        0.0680 0.1579
+        0.1440 0.5658
+        0.2420 1.0000
+        1.8611 1.0000
+      }
+    }
+  }
+}
+
+mapname "maps\DayHardpart_3_back.bsp"
+scalesettings
+{
+  "CChoreoView" "16"
+  "ExpressionTool" "56"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

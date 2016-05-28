@@ -1,0 +1,228 @@
+// Choreo version 1
+actor "engman1"
+{
+  channel "look"
+  {
+    event lookat "llllllllll"
+    {
+      time 0.010101 13.054832
+      param "morgan_combine"
+    }
+  }
+  channel "att"
+  {
+    event flexanimation "f"
+    {
+      time 0.055555 13.277778
+      param ""
+      event_ramp
+      {
+        0.0000 1.0000
+        12.1360 0.8254
+        12.5060 0.3651
+      }
+      flexanimations samples_use_time
+      {
+        "blink"        
+        {
+          0.5472 0.0800
+        }
+        "inner_raiser"         combo        
+        {
+          0.5472 0.0000
+        }
+        {
+          0.5472 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.5472 0.1800
+        }
+        {
+          0.5472 0.5000
+        }
+        "upper_raiser"         combo        
+        {
+          0.5472 0.0000
+        }
+        {
+          0.5472 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.5472 0.5100
+        }
+        {
+          0.5472 0.5000
+        }
+        "smile"        
+        {
+          0.5472 0.2500
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.5472 0.6700
+        }
+      }
+    }
+  }
+  channel "voice"
+  {
+    event flexanimation "ffe"
+    {
+      time 10.611112 19.111111
+      param ""
+      event_ramp
+      {
+        0.1520 0.7302
+        7.8720 0.6667
+      }
+      flexanimations samples_use_time
+      {
+        "blink"        
+        {
+          0.4571 0.0800
+        }
+        "inner_raiser"         combo        
+        {
+          0.4571 0.0000
+        }
+        {
+          0.4571 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.4571 1.0000
+        }
+        {
+          0.4571 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.4571 0.0000
+        }
+        {
+          0.4571 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.4571 0.1800
+        }
+        {
+          0.4571 0.5000
+        }
+        "wrinkler"        
+        {
+          0.4571 0.3100
+        }
+        "upper_raiser"         combo        
+        {
+          0.4571 0.0000
+        }
+        {
+          0.4571 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.4571 0.0000
+        }
+        {
+          0.4571 0.5000
+        }
+        "smile"        
+        {
+          0.4571 1.0000
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.4571 0.3100
+        }
+        "eyes_updown"         range 30.0 -30.0        
+        {
+          0.4571 0.0000
+        }
+      }
+    }
+    event sequence "sew"
+    {
+      time 3.722223 5.022223
+      param "gesture_head_01"
+      event_ramp
+      {
+        0.2980 0.6667
+        0.8100 0.6349
+      }
+      fixedlength
+    }
+  }
+  channel "move"
+  {
+    event sequence "seq"
+    {
+      time 0.111111 3.077778
+      param "Gesture_salute"
+      fixedlength
+    }
+    event sequence "yt"
+    {
+      time 4.500000 6.633333
+      param "g_cb_thumbs"
+      event_ramp
+      {
+        0.6480 0.4286
+      }
+      fixedlength
+    }
+  }
+  faceposermodel "models\Barney.mdl"
+}
+
+actor "Jack_combine"
+{
+  channel "ch"
+  {
+    event face "ffff"
+    {
+      time 0.111111 16.111111
+      param "engman1"
+    }
+  }
+  channel "ch"
+  {
+    event sequence "rt"
+    {
+      time 1.900000 2.900000
+      param "barrelpush"
+      event_ramp
+      {
+        0.5440 0.2540
+      }
+      fixedlength
+    }
+    event sequence "ss"
+    {
+      time 5.000000 6.000000
+      param "pushplayer"
+      event_ramp
+      {
+        0.3820 0.4205
+        0.4120 0.5000
+        0.4520 0.4603
+      }
+      fixedlength
+    }
+  }
+  faceposermodel "models\Police.mdl"
+}
+
+mapname "maps\villa_notturna.bsp"
+scalesettings
+{
+  "CChoreoView" "12"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

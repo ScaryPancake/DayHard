@@ -1,0 +1,48 @@
+// Choreo version 1
+actor "JackKomb"
+{
+  channel "action"
+  {
+    event face "face"
+    {
+      time 0.038333 2.014999
+      param "morgankomb"
+      event_ramp
+      {
+        0.1260 0.9841
+        1.5337 0.9841
+      }
+      lockbodyfacing
+    }
+  }
+  faceposermodel "models\Police.mdl"
+}
+
+actor "MorganKomb"
+{
+  channel "looook"
+  {
+    event face "face"
+    {
+      time 0.025000 2.141666
+      param "jackkomb"
+      event_ramp
+      {
+        0.1240 0.8413
+        1.7193 0.9365
+      }
+    }
+  }
+  faceposermodel "models\Police.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "80"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

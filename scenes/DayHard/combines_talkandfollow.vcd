@@ -1,0 +1,262 @@
+// Choreo version 1
+actor "Jack_metro"
+{
+  channel "follow"
+  {
+    event moveto "move"
+    {
+      time 0.000000 7.611111
+      param "!player"
+      param2 "Run"
+      distancetotarget 48.00
+    }
+    event moveto "move"
+    {
+      time 7.000000 13.444445
+      param "!player"
+      param2 "Walk"
+      event_ramp
+      {
+        0.2400 0.7955
+      }
+      distancetotarget 46.00
+    }
+    event moveto "move"
+    {
+      time 13.388888 20.777777
+      param "!player"
+      param2 "run"
+      distancetotarget 48.00
+    }
+  }
+  channel "posa"
+  {
+    event face "faceee"
+    {
+      time 0.055555 20.722223
+      param "!player"
+      event_ramp
+      {
+        0.4480 0.6250
+        20.1865 0.5568
+      }
+    }
+  }
+  channel "posa"
+  {
+    event sequence "s"
+    {
+      time 1.000000 3.166667
+      param "buttonfront"
+      event_ramp
+      {
+        0.7040 0.5114
+      }
+      fixedlength
+    }
+    event sequence "t"
+    {
+      time 3.500000 5.555556
+      param "man_gun"
+      event_ramp
+      {
+        0.1960 0.3864
+        0.2760 0.3750
+        0.2900 0.2841
+        0.3020 0.3068
+        0.3140 0.4091
+        0.3480 0.4659
+        0.3680 0.4091
+        0.3860 0.3182
+        0.4060 0.2614
+        0.4560 0.3636
+      }
+    }
+    event sequence "seq"
+    {
+      time 6.600000 13.266666
+      param "plazathreat2"
+      fixedlength
+    }
+  }
+  channel "look"
+  {
+    event lookat "ssss"
+    {
+      time 6.888889 13.166668
+      param "!player"
+      event_ramp
+      {
+        0.1600 0.7727
+        1.9820 1.0000
+        2.1040 0.1364
+        2.1180 0.1250
+        2.4780 0.8409
+      }
+    }
+  }
+  channel "seq"
+  {
+  }
+  faceposermodel "models\Police.mdl"
+}
+
+actor "traitor1"
+{
+  channel "look"
+  {
+    event face "ff"
+    {
+      time 2.222222 9.333332
+      param "Jack_metro"
+      event_ramp
+      {
+        0.2660 0.7159
+        4.3180 0.4886
+      }
+      lockbodyfacing
+    }
+    event lookat "ll"
+    {
+      time 0.222222 19.777779
+      param "Jack_metro"
+      event_ramp
+      {
+        0.2580 0.5114
+        11.7642 0.4205
+        15.2782 0.7159
+      }
+    }
+  }
+}
+
+actor "scientist1"
+{
+  channel "look"
+  {
+    event lookat "llok"
+    {
+      time 0.111111 8.055555
+      param "Jack_metro"
+      event_ramp
+      {
+        0.2580 0.7500
+        5.6500 0.6705
+      }
+    }
+    event lookat "f"
+    {
+      time 7.277778 13.666667
+      param "!player"
+      event_ramp
+      {
+        0.2280 0.8182
+        4.9691 0.7045
+      }
+    }
+    event lookat "g"
+    {
+      time 12.111111 20.777777
+      param "Jack_metro"
+      event_ramp
+      {
+        0.4400 0.7273
+      }
+    }
+  }
+}
+
+actor "scientist2"
+{
+  channel "lool"
+  {
+    event lookat "gg"
+    {
+      time 0.111111 20.666666
+      param "Jack_metro"
+      event_ramp
+      {
+        1.2100 0.6413
+      }
+    }
+  }
+  channel "look"
+  {
+    event face "ff"
+    {
+      time 3.333333 10.333333
+      param "Jack_metro"
+      event_ramp
+      {
+        0.6560 0.4886
+      }
+    }
+    event lookat "ff"
+    {
+      time 11.333334 20.500000
+      param "!player"
+      event_ramp
+      {
+        0.3380 0.5761
+        6.2367 0.4457
+      }
+    }
+    event lookat "lok"
+    {
+      time 7.833333 13.055555
+      param "Jack_metro"
+      event_ramp
+      {
+        0.7180 0.8000
+      }
+    }
+  }
+  channel "see"
+  {
+    event moveto "moveto"
+    {
+      time 9.888889 20.611111
+      param "scientist1"
+      param2 "Walk"
+      event_ramp
+      {
+        0.0740 0.3250
+        0.2260 0.6000
+        0.3420 0.8125
+        0.4320 0.8000
+        0.4940 0.6250
+        0.5760 0.2625
+        0.6200 0.0125
+        0.9980 0.0875
+        1.0360 0.2750
+        1.1000 0.4750
+        1.1400 0.6000
+        2.8600 0.6625
+      }
+      distancetotarget 64.00
+    }
+    event sequence "seq"
+    {
+      time 5.833333 8.910256
+      param "use_eyescanner"
+      event_ramp
+      {
+        0.3140 0.3816
+        0.5200 0.5395
+      }
+      fixedlength
+    }
+  }
+  faceposermodel "models\Kleiner.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "12"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

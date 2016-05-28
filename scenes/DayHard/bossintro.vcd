@@ -1,0 +1,78 @@
+// Choreo version 1
+actor "MorganKomb"
+{
+  channel "look"
+  {
+    event lookat "lllll4321"
+    {
+      time 0.013333 1.305395
+      param "JackKomb"
+      yaw "-64"
+    }
+    event lookat "lookJ"
+    {
+      time 1.103535 6.112689
+      param "look_at_boos"
+      event_ramp
+      {
+        0.2000 0.8095
+        4.5080 1.0000
+      }
+    }
+  }
+  faceposermodel "models\Police.mdl"
+}
+
+actor "JackKomb"
+{
+  channel "look"
+  {
+    event lookat "look"
+    {
+      time 1.106692 7.060291
+      param "look_at_boos"
+      event_ramp
+      {
+        0.1960 0.7778
+        4.4260 0.7619
+      }
+    }
+    event face "face"
+    {
+      time 0.030303 1.257576
+      param "MorganKomb"
+      event_ramp
+      {
+        0.1560 0.9623
+        0.9440 0.7547
+      }
+      lockbodyfacing
+    }
+  }
+  channel "action"
+  {
+    event sequence "seq"
+    {
+      time 0.093750 2.260417
+      param "buttonleft"
+      event_ramp
+      {
+        0.8680 0.2540
+      }
+      fixedlength
+    }
+  }
+  faceposermodel "models\Police.mdl"
+}
+
+mapname "maps\Villa_interno.bsp"
+scalesettings
+{
+  "CChoreoView" "66"
+  "RampTool" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

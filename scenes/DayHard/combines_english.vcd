@@ -1,0 +1,195 @@
+// Choreo version 1
+actor "Morgan_combine"
+{
+  channel "l0ok"
+  {
+    event lookat "j"
+    {
+      time 0.040000 21.728306
+      param "engman1"
+    }
+  }
+  channel "seq"
+  {
+  }
+  faceposermodel "models\Police.mdl"
+}
+
+actor "Jack_combine"
+{
+  channel "look"
+  {
+    event lookat "ll"
+    {
+      time 0.022828 21.670998
+      param "engman1"
+    }
+  }
+  channel "seq"
+  {
+  }
+  faceposermodel "models\Police.mdl"
+}
+
+actor "engman1"
+{
+  channel "look"
+  {
+    event lookat "llllllllll"
+    {
+      time 0.010101 13.054832
+      param "morgan_combine"
+    }
+  }
+  channel "att"
+  {
+    event flexanimation "f"
+    {
+      time 0.055555 13.277778
+      param ""
+      event_ramp
+      {
+        0.0000 1.0000
+        12.1360 0.8254
+        12.5060 0.3651
+      }
+      flexanimations samples_use_time
+      {
+        "blink"        
+        {
+          0.5472 0.0800
+        }
+        "inner_raiser"         combo        
+        {
+          0.5472 0.0000
+        }
+        {
+          0.5472 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.5472 0.1800
+        }
+        {
+          0.5472 0.5000
+        }
+        "upper_raiser"         combo        
+        {
+          0.5472 0.0000
+        }
+        {
+          0.5472 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.5472 0.5100
+        }
+        {
+          0.5472 0.5000
+        }
+        "smile"        
+        {
+          0.5472 0.2500
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.5472 0.6700
+        }
+      }
+    }
+  }
+  channel "voice"
+  {
+    event flexanimation "ffe"
+    {
+      time 10.611112 19.111111
+      param ""
+      event_ramp
+      {
+        0.1520 0.7302
+        7.8720 0.6667
+      }
+      flexanimations samples_use_time
+      {
+        "blink"        
+        {
+          0.4571 0.0800
+        }
+        "inner_raiser"         combo        
+        {
+          0.4571 0.0000
+        }
+        {
+          0.4571 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.4571 1.0000
+        }
+        {
+          0.4571 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.4571 0.0000
+        }
+        {
+          0.4571 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.4571 0.1800
+        }
+        {
+          0.4571 0.5000
+        }
+        "wrinkler"        
+        {
+          0.4571 0.3100
+        }
+        "upper_raiser"         combo        
+        {
+          0.4571 0.0000
+        }
+        {
+          0.4571 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.4571 0.0000
+        }
+        {
+          0.4571 0.5000
+        }
+        "smile"        
+        {
+          0.4571 1.0000
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.4571 0.3100
+        }
+        "eyes_updown"         range 30.0 -30.0        
+        {
+          0.4571 0.0000
+        }
+      }
+    }
+  }
+  channel "move"
+  {
+  }
+  faceposermodel "models\Barney.mdl"
+}
+
+mapname "maps\villa_notturna.bsp"
+scalesettings
+{
+  "CChoreoView" "12"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

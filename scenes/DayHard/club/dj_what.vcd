@@ -1,0 +1,49 @@
+// Choreo version 1
+actor "dj"
+{
+  channel "1"
+  {
+    event lookat "look"
+    {
+      time 0.014493 2.079711
+      param "!player"
+      event_ramp
+      {
+        0.0000 0.7917
+        0.3960 0.9861
+        1.8405 0.9444
+        1.9685 0.8611
+      }
+    }
+  }
+  channel "2"
+  {
+  }
+  channel "3"
+  {
+    event sequence "seq"
+    {
+      time 0.002032 2.043901
+      param "barrelpushidle"
+      event_ramp
+      {
+        0.0320 0.7718
+        1.6400 0.8571
+      }
+    }
+  }
+  channel "4"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "46"
+  "RampTool" "50"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

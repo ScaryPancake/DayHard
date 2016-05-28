@@ -1,0 +1,305 @@
+// Choreo version 1
+actor "Morgan_1"
+{
+  channel "actions"
+  {
+    event gesture "g"
+    {
+      time 0.000000 6.184797
+      param "G_noway_big"
+      event_ramp
+      {
+        0.3400 1.0000
+        3.4050 0.7937
+      }
+      absolutetags playback_time
+      {
+        "apex" 0.056182
+        "accent" 0.101128
+        "loop" 0.157310
+        "end" 0.976070
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+    event gesture "gg"
+    {
+      time 6.000000 9.868254
+      param "G_noway_big"
+      absolutetags playback_time
+      {
+        "apex" 0.009512
+        "accent" 0.079494
+        "loop" 0.166971
+        "end" 0.254448
+      }
+      absolutetags shifted_time
+      {
+        "apex" 0.151515
+        "accent" 0.272727
+        "loop" 0.424242
+        "end" 0.575758
+      }
+      sequenceduration 2.233333
+    }
+  }
+  channel "looking"
+  {
+    event lookat "ll"
+    {
+      time 0.000000 5.536667
+      param "jack_1"
+    }
+    event lookat "look"
+    {
+      time 5.750000 9.523809
+      param "target_looktowradspsicina"
+    }
+  }
+  channel "face"
+  {
+    event flexanimation "f"
+    {
+      time 0.014815 6.142982
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.7446 1.0000
+        }
+        {
+          0.7446 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.7446 0.0000
+        }
+        {
+          0.7446 0.5000
+        }
+        "lid_droop"         combo        
+        {
+          0.7446 0.0000
+        }
+        {
+          0.7446 0.5000
+        }
+        "lid_closer"         combo        
+        {
+          0.7446 0.0000
+        }
+        {
+          0.7446 0.5000
+        }
+        "half_closed"        
+        {
+          0.7446 0.0000
+        }
+        "blink"        
+        {
+          0.7446 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          0.7446 0.0000
+        }
+        {
+          0.7446 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.7446 0.0000
+        }
+        {
+          0.7446 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.7446 1.0000
+        }
+        {
+          0.7446 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.7446 1.0000
+        }
+        {
+          0.7446 0.5000
+        }
+        "upper_raiser"         combo        
+        {
+          0.7446 0.0000
+        }
+        {
+          0.7446 0.5000
+        }
+        "part"         combo        
+        {
+          0.7446 0.0000
+        }
+        {
+          0.7446 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.7446 0.4600
+        }
+        {
+          0.7446 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.7446 0.1500
+        }
+        {
+          0.7446 0.5000
+        }
+        "stretcher"         combo        
+        {
+          0.7446 0.0000
+        }
+        {
+          0.7446 0.5000
+        }
+        "bite"        
+        {
+          0.7446 1.0000
+        }
+        "presser"        
+        {
+          0.7446 0.0000
+        }
+        "tightener"        
+        {
+          0.7446 0.2400
+        }
+        "jaw_clencher"        
+        {
+          0.7446 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.7446 0.2000
+        }
+        "mouth_drop"         combo        
+        {
+          0.7446 0.0000
+        }
+        {
+          0.7446 0.5000
+        }
+        "smile"        
+        {
+          0.7446 0.0000
+        }
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_07.mdl"
+}
+
+actor "Jack_1"
+{
+  channel "looking"
+  {
+    event lookat "ll1"
+    {
+      time 0.000000 6.949735
+      param "morgan_1"
+    }
+  }
+  channel "face"
+  {
+    event flexanimation "ffff"
+    {
+      time 0.011905 3.448414
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.3047 0.0000
+        }
+        {
+          0.3047 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.3047 1.0000
+        }
+        {
+          0.3047 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.3047 0.0000
+        }
+        {
+          0.3047 0.5000
+        }
+        "wrinkler"        
+        {
+          0.3047 1.0000
+        }
+        "upper_raiser"         combo        
+        {
+          0.3047 0.0000
+        }
+        {
+          0.3047 0.5000
+        }
+        "corner_depressor"         combo        
+        {
+          0.3047 0.0000
+        }
+        {
+          0.3047 0.5000
+        }
+        "part"         combo        
+        {
+          0.3047 0.0000
+        }
+        {
+          0.3047 0.5000
+        }
+        "bite"        
+        {
+          0.3047 0.0000
+        }
+        "smile"        
+        {
+          0.3047 1.0000
+        }
+        "lower_lip"        
+        {
+          0.3047 0.0000
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.3047 0.1600
+        }
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_02.mdl"
+}
+
+mapname "maps\Finale.bsp"
+scalesettings
+{
+  "CChoreoView" "42"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "ExpressionTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

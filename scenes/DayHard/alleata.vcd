@@ -1,0 +1,361 @@
+// Choreo version 1
+actor "npc_maker_stanza5_1"
+{
+  channel "act"
+  {
+    event face "players"
+    {
+      time 0.013333 4.513333
+      param "!player"
+    }
+  }
+  channel "d"
+  {
+    event sequence "ff"
+    {
+      time 0.093334 1.393334
+      param "hg_nod_right"
+      fixedlength
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flexx"
+    {
+      time 0.006667 5.598765
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.5214 1.0000
+        }
+        {
+          0.5214 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.5214 0.0000
+        }
+        {
+          0.5214 0.5000
+        }
+        "half_closed"        
+        {
+          0.5214 0.0000
+        }
+        "blink"        
+        {
+          0.5214 0.2500
+        }
+        "cheek_raiser"         combo        
+        {
+          0.5214 0.5300
+        }
+        {
+          0.5214 0.5000
+        }
+        "dilator"        
+        {
+          0.5214 0.0800
+        }
+        "upper_raiser"         combo        
+        {
+          0.5214 0.0000
+        }
+        {
+          0.5214 0.5000
+        }
+        "part"         combo        
+        {
+          0.5214 0.0000
+        }
+        {
+          0.5214 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.5214 0.4600
+        }
+        {
+          0.5214 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.5214 0.1500
+        }
+        {
+          0.5214 0.5000
+        }
+        "stretcher"         combo        
+        {
+          0.5214 0.0000
+        }
+        {
+          0.5214 0.5000
+        }
+        "bite"        
+        {
+          0.5214 0.0000
+        }
+        "presser"        
+        {
+          0.5214 0.0000
+        }
+        "tightener"        
+        {
+          0.5214 0.1300
+        }
+        "jaw_clencher"        
+        {
+          0.5214 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.5214 0.2000
+        }
+        "mouth_drop"         combo        
+        {
+          0.5214 0.0000
+        }
+        {
+          0.5214 0.5000
+        }
+        "smile"        
+        {
+          0.5214 1.0000
+        }
+        "lower_lip"        
+        {
+          0.5214 0.0000
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.5214 0.6700
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.5214 0.5000
+        }
+        "eyes_updown"         range 30.0 -30.0        
+        {
+          0.5214 0.4600
+        }
+        "body_rightleft"         range 30.0 -30.0        
+        {
+          0.5214 0.5200
+        }
+        "chest_rightleft"         range 30.0 -30.0        
+        {
+          0.5214 0.5400
+        }
+        "head_forwardback"         range 0.2 -0.2        
+        {
+          0.5214 1.0000
+        }
+        "gesture_updown"         range -1.0 1.0        
+        {
+          0.5214 0.4900
+        }
+        "gesture_rightleft"         range -1.0 1.0        
+        {
+          0.5214 0.5000
+        }
+      }
+    }
+  }
+  channel "ss"
+  {
+    event flexanimation "smile2"
+    {
+      time 3.055556 8.000000
+      param ""
+      event_ramp
+      {
+        0.0560 1.0000
+      }
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.1953 1.0000
+        }
+        {
+          0.1953 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.1953 0.0000
+        }
+        {
+          0.1953 0.5000
+        }
+        "half_closed"        
+        {
+          0.1953 0.0000
+        }
+        "blink"        
+        {
+          0.1953 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          0.1953 1.0000
+        }
+        {
+          0.1953 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.1953 0.9600
+        }
+        {
+          0.1953 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.1953 0.5300
+        }
+        {
+          0.1953 0.5000
+        }
+        "dilator"        
+        {
+          0.1953 0.0800
+        }
+        "upper_raiser"         combo        
+        {
+          0.1953 0.0000
+        }
+        {
+          0.1953 0.5000
+        }
+        "chin_raiser"        
+        {
+          0.1953 0.3500
+        }
+        "part"         combo        
+        {
+          0.1953 0.0000
+        }
+        {
+          0.1953 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.1953 0.4600
+        }
+        {
+          0.1953 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.1953 0.1500
+        }
+        {
+          0.1953 0.5000
+        }
+        "stretcher"         combo        
+        {
+          0.1953 0.0000
+        }
+        {
+          0.1953 0.5000
+        }
+        "bite"        
+        {
+          0.1953 0.0000
+        }
+        "presser"        
+        {
+          0.1953 0.0000
+        }
+        "tightener"        
+        {
+          0.1953 1.0000
+        }
+        "jaw_clencher"        
+        {
+          0.1953 1.0000
+        }
+        "jaw_drop"        
+        {
+          0.1953 0.2000
+        }
+        "mouth_drop"         combo        
+        {
+          0.1953 0.0000
+        }
+        {
+          0.1953 0.5000
+        }
+        "smile"        
+        {
+          0.1953 0.7600
+        }
+        "lower_lip"        
+        {
+          0.1953 0.0000
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+          0.1953 0.4700
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.1953 0.6700
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.1953 0.9400
+        }
+        "eyes_updown"         range 30.0 -30.0        
+        {
+          0.1953 0.4600
+        }
+        "body_rightleft"         range 30.0 -30.0        
+        {
+          0.1953 0.5200
+        }
+        "chest_rightleft"         range 30.0 -30.0        
+        {
+          0.1953 0.5400
+        }
+        "head_forwardback"         range 0.2 -0.2        
+        {
+          0.1953 1.0000
+        }
+        "gesture_updown"         range -1.0 1.0        
+        {
+          0.1953 0.4900
+        }
+        "gesture_rightleft"         range -1.0 1.0        
+        {
+          0.1953 0.5000
+        }
+      }
+    }
+  }
+  channel "walk"
+  {
+    event moveto "aedfd"
+    {
+      time 0.006173 7.820350
+      param "!player"
+      param2 "Run"
+      distancetotarget 1.00
+    }
+  }
+  faceposermodel "models\Humans\Group01\Female_01.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "58"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

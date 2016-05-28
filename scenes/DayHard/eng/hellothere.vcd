@@ -1,0 +1,434 @@
+// Choreo version 1
+actor "engman1"
+{
+  channel "look"
+  {
+    event lookat "llllllllll"
+    {
+      time 0.010101 13.054832
+      param "morgan_combine"
+    }
+  }
+  channel "att"
+  {
+    event flexanimation "expression"
+    {
+      time 0.000000 7.000000
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.5664 0.0000
+        }
+        {
+          0.5664 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.5664 0.8800
+        }
+        {
+          0.5664 0.5000
+        }
+        "blink"        
+        {
+          0.5664 0.0900
+        }
+        "inner_raiser"         combo        
+        {
+          0.5664 1.0000
+        }
+        {
+          0.5664 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.5664 0.0000
+        }
+        {
+          0.5664 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.5664 0.0000
+        }
+        {
+          0.5664 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.5664 0.0000
+        }
+        {
+          0.5664 0.5000
+        }
+        "dilator"        
+        {
+          0.5664 0.5400
+        }
+        "upper_raiser"         combo        
+        {
+          0.5664 0.3500
+        }
+        {
+          0.5664 0.5000
+        }
+        "tightener"        
+        {
+          0.5664 0.0000
+        }
+        "smile"        
+        {
+          0.5664 0.0000
+        }
+      }
+    }
+  }
+  channel "voice"
+  {
+    event flexanimation "why"
+    {
+      time 0.277778 0.777778
+      param ""
+      event_ramp
+      {
+        0.3020 0.7536
+      }
+      flexanimations samples_use_time
+      {
+        "upper_raiser"         combo        
+        {
+          0.2596 0.0000
+          0.3519 0.0000
+          0.4807 0.0000
+        }
+        {
+          0.2596 0.5000
+          0.4807 0.5000
+        }
+        "part"         combo        
+        {
+          0.2596 0.0000
+          0.4807 0.0000
+        }
+        {
+          0.2596 0.5000
+          0.4807 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.2596 0.3000
+          0.4807 0.3000
+        }
+        {
+          0.2596 0.5000
+          0.4807 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.2596 0.1500
+          0.4807 0.1500
+        }
+        {
+          0.2596 0.5000
+          0.4807 0.5000
+        }
+        "stretcher"         combo        
+        {
+          0.2596 0.0000
+          0.4807 0.0000
+        }
+        {
+          0.2596 0.5000
+          0.4807 0.5000
+        }
+        "bite"        
+        {
+          0.2596 0.0000
+          0.4807 0.0000
+        }
+        "presser"        
+        {
+          0.2596 0.1900
+          0.4807 0.1900
+        }
+        "tightener"        
+        {
+          0.2596 0.7100
+          0.4807 0.2400
+        }
+        "jaw_clencher"        
+        {
+          0.2596 0.0000
+          0.4807 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.2596 1.0000
+          0.4807 0.4400
+        }
+        "mouth_drop"         combo        
+        {
+          0.2596 0.8000
+          0.4807 0.0900
+        }
+        {
+          0.2596 0.5000
+          0.4807 0.5000
+        }
+        "smile"        
+        {
+          0.2596 1.0000
+        }
+        "lower_lip"        
+        {
+          0.2596 0.6500
+          0.4807 0.7600
+        }
+        "head_rightleft"         disabled         range 30.0 -30.0        
+        {
+          0.2596 0.5000
+        }
+        "head_updown"         disabled         range 15.0 -15.0        
+        {
+          0.2596 1.0000
+          0.4807 1.0000
+        }
+        "head_tilt"         disabled         range 15.0 -15.0        
+        {
+          0.2596 0.4900
+        }
+      }
+    }
+    event flexanimation "why2"
+    {
+      time 1.006715 1.420635
+      param ""
+      event_ramp
+      {
+        0.1260 1.0000
+        0.4010 0.8986
+      }
+      flexanimations samples_use_time
+      {
+        "upper_raiser"         combo        
+        {
+        }
+        {
+        }
+        "part"         combo        
+        {
+        }
+        {
+        }
+        "puckerer"         combo        
+        {
+          0.2155 1.0000
+        }
+        {
+        }
+        "funneler"         combo        
+        {
+        }
+        {
+        }
+        "stretcher"         combo        
+        {
+          0.3069 0.0000
+        }
+        {
+        }
+        "bite"        
+        {
+        }
+        "presser"        
+        {
+          0.2121 0.1600
+        }
+        "tightener"        
+        {
+          0.2320 0.8600
+          0.2695 0.7900
+          0.2944 0.0000
+        }
+        "jaw_clencher"        
+        {
+          0.3044 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.3044 0.7800
+        }
+        "mouth_drop"         combo        
+        {
+          0.3194 0.3300
+        }
+        {
+        }
+        "smile"        
+        {
+          0.3094 0.2000
+        }
+        "lower_lip"        
+        {
+          0.3094 1.0000
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+        }
+      }
+    }
+    event flexanimation "why2"
+    {
+      time 0.697191 1.039682
+      param ""
+      event_ramp
+      {
+        0.1260 1.0000
+        0.3296 0.8986
+      }
+      flexanimations samples_use_time
+      {
+        "upper_raiser"         combo        
+        {
+        }
+        {
+        }
+        "part"         combo        
+        {
+        }
+        {
+        }
+        "puckerer"         combo        
+        {
+        }
+        {
+        }
+        "funneler"         combo        
+        {
+        }
+        {
+        }
+        "stretcher"         combo        
+        {
+          0.3069 0.0000
+        }
+        {
+        }
+        "bite"        
+        {
+        }
+        "presser"        
+        {
+        }
+        "tightener"        
+        {
+          0.2695 0.0000
+          0.2944 0.0000
+        }
+        "jaw_clencher"        
+        {
+          0.3044 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.3044 1.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.3194 0.3300
+        }
+        {
+        }
+        "smile"        
+        {
+          0.3094 0.3500
+        }
+        "lower_lip"        
+        {
+          0.3094 1.0000
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+        }
+      }
+    }
+  }
+  channel "flex"
+  {
+    event flexanimation "flex"
+    {
+      time 0.047619 10.785714
+      param ""
+      event_ramp
+      {
+        0.1620 0.9524
+        10.4520 0.6349
+      }
+      flexanimations samples_use_time
+      {
+        "inner_raiser"         combo        
+        {
+          0.5839 0.0000
+        }
+        {
+          0.5839 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.5839 0.1800
+        }
+        {
+          0.5839 0.5000
+        }
+        "upper_raiser"         combo        
+        {
+          0.5839 0.0000
+        }
+        {
+          0.5839 0.5000
+        }
+        "corner_puller"         combo        
+        {
+          0.5839 0.3500
+        }
+        {
+          0.5839 0.5000
+        }
+        "smile"        
+        {
+          0.5839 0.1800
+        }
+      }
+    }
+  }
+  channel "seq"
+  {
+  }
+  faceposermodel "models\Barney.mdl"
+}
+
+mapname "maps\villa_notturna.bsp"
+scalesettings
+{
+  "CChoreoView" "28"
+  "ExpressionTool" "86"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

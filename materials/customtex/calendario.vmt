@@ -1,0 +1,10 @@
+"LightmappedGeneric"
+
+{
+
+      "$basetexture" "customtex/calendario"
+       "$decal" 1
+       "$decalscale" 0.08
+}
+
+

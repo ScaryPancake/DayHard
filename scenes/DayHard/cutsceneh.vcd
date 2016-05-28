@@ -1,0 +1,83 @@
+// Choreo version 1
+actor "Side_cutsceneH"
+{
+  channel "sss"
+  {
+    event lookat "lok"
+    {
+      time 0.300000 7.807180
+      param "Morgan_cutsceneH"
+    }
+  }
+  channel "jj"
+  {
+    event face "fdg"
+    {
+      time 0.889744 7.769231
+      param "Morgan_cutsceneH"
+    }
+  }
+  channel "ch"
+  {
+    event sequence "g"
+    {
+      time 0.628205 2.461538
+      param "barrelpushidle"
+      event_ramp
+      {
+        0.6540 0.4762
+      }
+    }
+  }
+  faceposermodel "models\Police.mdl"
+}
+
+actor "Morgan_cutsceneH"
+{
+  channel "sssssss"
+  {
+    event lookat "s"
+    {
+      time 0.000000 7.710410
+      param "Side_cutsceneH"
+    }
+  }
+  channel "run"
+  {
+    event moveto "move"
+    {
+      time 0.006666 3.835385
+      param "Side_cutsceneH"
+      param2 "Run"
+      distancetotarget 33.00
+    }
+  }
+  channel "go"
+  {
+    event sequence "ss"
+    {
+      time 3.850770 4.784103
+      param "point"
+      event_ramp
+      {
+        0.0780 0.5714
+        0.8540 0.4762
+      }
+      fixedlength
+    }
+  }
+  faceposermodel "models\Police.mdl"
+  active "0"
+}
+
+mapname "maps\DayHardpart4.bsp"
+scalesettings
+{
+  "CChoreoView" "52"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

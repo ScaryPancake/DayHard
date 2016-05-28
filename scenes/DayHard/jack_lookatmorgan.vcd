@@ -1,0 +1,23 @@
+// Choreo version 1
+actor "Jackcarver"
+{
+  channel "lookat"
+  {
+    event lookat "lookatne"
+    {
+      time 0.006667 4.013333
+      param "!player"
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "SceneRampTool" "100"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+}
+fps 60
+snap off

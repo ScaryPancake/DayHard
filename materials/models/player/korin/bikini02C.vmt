@@ -1,0 +1,11 @@
+"vertexlitgeneric"
+{
+	"$baseTexture" "models\player\korin/bikini02C"
+	"$bumpmap" "models\player\korin/bikini01N"
+//	"$bumpmap" "Models/headcrab_classic/headcrabsheet_normal"
+	"$normalmapalphaenvmapmask"
+//	"$envmap" "env_cubemap"
+//	"$envmapcontrast" 0
+	"$selfillum" 1
+	"$model" 1
+}

@@ -1,0 +1,114 @@
+// Choreo version 1
+actor "cruel_finto"
+{
+  channel "move"
+  {
+    event moveto "mmm"
+    {
+      time 0.020000 1.766666
+      param "!player"
+      param2 "Run"
+      distancetotarget 19.00
+    }
+  }
+  channel "look"
+  {
+    event face "ff"
+    {
+      time 0.000000 1.073333
+      param "!player"
+    }
+  }
+}
+
+actor "cruel"
+{
+  channel "move"
+  {
+    event moveto "hh"
+    {
+      time 0.006667 1.726667
+      param "!player"
+      param2 "Run"
+      distancetotarget 29.00
+    }
+  }
+  channel "look"
+  {
+    event face "gg"
+    {
+      time 0.006667 1.626667
+      param "!player"
+    }
+  }
+}
+
+actor "walking_police"
+{
+  channel "move"
+  {
+    event face "ff"
+    {
+      time 0.006667 1.553334
+      param "!player"
+    }
+  }
+  channel "look"
+  {
+    event moveto "gg"
+    {
+      time 0.020000 1.720000
+      param "!player"
+      param2 "Run"
+      distancetotarget 40.00
+    }
+  }
+}
+
+actor "cop_0"
+{
+  channel "look"
+  {
+    event face "jfj"
+    {
+      time 0.000000 1.726667
+      param "!player"
+    }
+  }
+  channel "move"
+  {
+    event moveto "move"
+    {
+      time -0.000000 1.666666
+      param "!player"
+      param2 "Run"
+      distancetotarget 22.00
+    }
+  }
+}
+
+actor "cop_1"
+{
+  channel "move"
+  {
+    event face "yt"
+    {
+      time 0.013333 1.480000
+      param "!player"
+    }
+  }
+  channel "look"
+  {
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "100"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

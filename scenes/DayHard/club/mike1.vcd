@@ -1,0 +1,86 @@
+// Choreo version 1
+event loop "loop"
+{
+  time 6.331316 -1.000000
+  param "0.000000"
+  loopcount "-1"
+}
+actor "Mike"
+{
+  channel "look"
+  {
+    event lookat "look"
+    {
+      time 0.000000 3.266665
+      param "donna_Micheal"
+      event_ramp
+      {
+        0.2880 0.3947
+        0.8460 0.8684
+        2.9899 0.7632
+      }
+    }
+    event lookat "pl"
+    {
+      time 3.066666 6.366666
+      param "!player"
+      event_ramp
+      {
+        0.1120 0.2895
+        0.5160 0.9605
+        2.4340 1.0000
+        3.2180 0.9605
+      }
+    }
+  }
+  channel "face"
+  {
+    event face "face"
+    {
+      time 0.000000 3.333333
+      param "donna_Micheal"
+      event_ramp
+      {
+        0.5640 0.6447
+        2.4437 0.8947
+        3.0297 0.8421
+      }
+      lockbodyfacing
+    }
+    event face "face"
+    {
+      time 3.066667 6.350000
+      param "!player"
+      event_ramp
+      {
+        0.5640 0.6447
+        2.3937 0.8947
+        2.9797 0.8421
+      }
+      lockbodyfacing
+    }
+  }
+  channel "seq"
+  {
+    event sequence "seq"
+    {
+      time 0.000000 6.360000
+      param "Lean_back"
+    }
+  }
+  channel "move"
+  {
+  }
+  faceposermodel "models\Humans\Group02\male_07.mdl"
+}
+
+scalesettings
+{
+  "CChoreoView" "68"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

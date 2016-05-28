@@ -1,0 +1,442 @@
+// Choreo version 1
+actor "Mike"
+{
+  channel "look"
+  {
+    event lookat "look"
+    {
+      time 0.000000 4.358554
+      param "dj_2"
+    }
+  }
+  channel "face"
+  {
+    event face "face"
+    {
+      time 0.000000 4.372267
+      param "dj_2"
+      event_ramp
+      {
+        0.1620 0.8815
+        3.4827 0.8947
+        4.0687 0.8421
+      }
+    }
+  }
+  channel "seq"
+  {
+    event sequence "seq"
+    {
+      time 0.011494 0.711494
+      param "Stand_to_crouch"
+      event_ramp
+      {
+        0.0180 0.3718
+        0.0700 0.6538
+        0.2200 1.0000
+        0.6100 1.0000
+        0.6500 0.7821
+      }
+      fixedlength
+    }
+    event sequence "seq"
+    {
+      time 0.022988 3.356321
+      param "photo_react_blind"
+      event_ramp
+      {
+        0.0180 0.0658
+        0.1060 0.0921
+        0.3360 0.1842
+        0.4640 0.1842
+        0.5300 0.3158
+        0.5860 0.1711
+        0.7000 0.4211
+      }
+      fixedlength
+    }
+    event sequence "tr"
+    {
+      time 1.706559 4.057416
+      param "scaredidle"
+      event_ramp
+      {
+        0.1840 0.4615
+        0.2680 0.6646
+        2.0999 0.5780
+        2.3509 0.2831
+      }
+    }
+    event sequence "seqw"
+    {
+      time 0.659375 1.959375
+      param "crouch_reload_pistol"
+      event_ramp
+      {
+        0.0180 0.6154
+        0.0600 0.9744
+        0.1420 0.9615
+        0.2020 0.9744
+        0.2680 0.6282
+        0.3820 0.8077
+        1.0780 0.9231
+        1.3000 0.2703
+      }
+      fixedlength
+    }
+    event sequence "tr"
+    {
+      time 0.471264 4.273103
+      param "cower_Idle"
+      event_ramp
+      {
+        0.1840 0.4615
+        0.2680 0.8590
+        3.1660 1.0000
+        3.5509 0.0000
+        3.8019 0.2831
+      }
+    }
+  }
+  channel "move"
+  {
+    event moveto "n"
+    {
+      time 1.997971 4.341672
+      param "dj_2"
+      param2 "CrouchWalk"
+      event_ramp
+      {
+        0.0800 0.1026
+        0.4240 0.7436
+        0.8620 0.9359
+      }
+      distancetotarget 80.00
+    }
+  }
+  channel "face"
+  {
+    event flexanimation "flex"
+    {
+      time 0.039216 4.362745
+      param ""
+      flexanimations samples_use_time
+      {
+        "half_closed"        
+        {
+          0.5686 0.0000
+        }
+        "blink"        
+        {
+          0.5686 0.0400
+        }
+        "outer_raiser"         combo        
+        {
+          0.5686 0.2300
+          4.2994 0.9500
+        }
+        {
+          0.5686 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.5686 1.0000
+          4.2994 0.8900
+        }
+        {
+          0.5686 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.5686 0.7100
+          4.3144 0.9700
+        }
+        {
+          0.5686 0.5000
+        }
+        "part"         combo        
+        {
+          0.5686 0.6000
+          4.3122 0.9000
+        }
+        {
+          0.5686 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.5686 0.0000
+        }
+        {
+          0.5686 0.5000
+        }
+        "bite"        
+        {
+          0.5686 1.0000
+          4.3235 1.0000
+        }
+        "jaw_drop"        
+        {
+          0.5686 0.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.5686 0.0000
+        }
+        {
+          0.5686 0.5000
+        }
+        "head_updown"         range 15.0 -15.0        
+        {
+          0.5686 0.6500
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.5686 0.5000
+        }
+      }
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_02.mdl"
+}
+
+actor "morgan_fake1"
+{
+  channel "channel"
+  {
+    event lookat "look"
+    {
+      time 0.000000 0.794118
+      param "mike"
+      event_ramp
+      {
+        0.0220 0.5833
+        0.0820 0.8750
+        0.4320 0.9028
+        0.7420 0.6667
+      }
+    }
+    event lookat "look"
+    {
+      time 0.764706 2.558824
+      param "mike"
+      event_ramp
+      {
+        0.1840 0.5000
+        0.6380 0.9306
+        1.4320 0.9028
+        1.7420 0.6667
+      }
+    }
+  }
+  channel "fre"
+  {
+    event flexanimation "flex"
+    {
+      time 0.000000 4.400000
+      param ""
+      flexanimations samples_use_time
+      {
+        "lid_raiser"         combo        
+        {
+          0.5279 1.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "lid_tightener"         combo        
+        {
+          0.5279 0.4000
+        }
+        {
+          0.5279 0.5000
+        }
+        "half_closed"        
+        {
+          0.5279 0.0000
+        }
+        "blink"        
+        {
+          0.5279 0.0000
+        }
+        "inner_raiser"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "outer_raiser"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "lowerer"         combo        
+        {
+          0.5279 1.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "cheek_raiser"         combo        
+        {
+          0.5279 0.3800
+        }
+        {
+          0.5279 0.5000
+        }
+        "part"         combo        
+        {
+          0.5279 0.7400
+        }
+        {
+          0.5279 0.5000
+        }
+        "puckerer"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "funneler"         combo        
+        {
+          0.5279 0.4800
+        }
+        {
+          0.5279 0.5000
+        }
+        "stretcher"         combo        
+        {
+          0.5279 0.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "bite"        
+        {
+          0.5279 0.3900
+        }
+        "presser"        
+        {
+          0.5279 0.0000
+        }
+        "tightener"        
+        {
+          0.5279 0.0000
+        }
+        "jaw_clencher"        
+        {
+          0.5279 0.0000
+        }
+        "jaw_drop"        
+        {
+          0.5279 1.0000
+        }
+        "mouth_drop"         combo        
+        {
+          0.5279 1.0000
+        }
+        {
+          0.5279 0.5000
+        }
+        "smile"        
+        {
+          0.5279 0.0000
+        }
+        "lower_lip"        
+        {
+          0.5279 0.9600
+        }
+        "head_rightleft"         range 30.0 -30.0        
+        {
+          0.5279 0.4900
+        }
+        "head_tilt"         range 15.0 -15.0        
+        {
+          0.5279 0.5000
+        }
+        "head_forwardback"         range 0.2 -0.2        
+        {
+          0.5279 1.0000
+        }
+      }
+    }
+  }
+  channel "look"
+  {
+    event face "face"
+    {
+      time 0.000000 0.911765
+      param "mike"
+      event_ramp
+      {
+        0.0000 0.6806
+        0.0840 0.9167
+        0.3760 0.9722
+        0.7116 0.9028
+        0.7776 0.6250
+      }
+    }
+    event face "faccee"
+    {
+      time 0.627451 2.500000
+      param "Camera_insideBar"
+      event_ramp
+      {
+        0.1040 0.2500
+        0.2340 0.5972
+        0.3720 0.9444
+        0.6600 0.9861
+        1.5540 0.9306
+        1.6840 0.3472
+      }
+    }
+  }
+  channel "sequenza"
+  {
+    event sequence "seqqqq"
+    {
+      time 0.019608 3.352941
+      param "photo_react_blind"
+      event_ramp
+      {
+        0.0160 0.4861
+        0.1620 0.9167
+        0.5580 0.8889
+        0.6400 0.7083
+        0.7700 0.6111
+        1.1380 0.8194
+        1.8800 0.7361
+        2.3480 0.4861
+        2.7000 0.4861
+        3.3260 0.4306
+      }
+      fixedlength
+    }
+  }
+  channel "seq"
+  {
+    event moveto "move"
+    {
+      time 0.764706 4.264705
+      param "target_dietro"
+      param2 "Run"
+      distancetotarget 42.00
+    }
+  }
+  faceposermodel "models\Humans\Group02\male_02.mdl"
+  active "0"
+}
+
+scalesettings
+{
+  "CChoreoView" "34"
+  "ExpressionTool" "100"
+  "RampTool" "100"
+  "GestureTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off

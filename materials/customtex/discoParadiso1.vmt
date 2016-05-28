@@ -1,0 +1,12 @@
+"LightmappedGeneric"
+
+{
+
+      "$basetexture" "customtex/discoParadiso1"
+      "$alphatest" 1
+      "$nomip" 1
+      "$additive" 1
+      "$decal" 1
+       "$decalscale" 0.30
+}
+

@@ -1,0 +1,32 @@
+// Choreo version 1
+actor "Morgan_0"
+{
+  channel "move"
+  {
+  }
+}
+
+actor "Jack_0"
+{
+  channel "move"
+  {
+    event moveto "mm"
+    {
+      time 0.000000 4.234286
+      param "morgan_0"
+      param2 "CrouchWalk"
+      distancetotarget 53.00
+    }
+  }
+}
+
+scalesettings
+{
+  "CChoreoView" "84"
+  "ExpressionTool" "100"
+  "GestureTool" "100"
+  "RampTool" "100"
+  "SceneRampTool" "100"
+}
+fps 60
+snap off
