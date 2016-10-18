@@ -1,4 +1,3 @@
-
 This patch fixes most issues related to engine branch incompatibility and 
 is designed to run using the latest "Beta" of Source SDK Base 2013 Singleplayer.
 
@@ -14,13 +13,13 @@ Marc-Antoine (malortie) Lortie.
 1a.
 
 	Ensure that you have Source SDK Base 2013 Singleplayer installed and configured to use 
-	the latest beta, "incoming".
+	the latest beta, "upcoming".
 
 	If not set:
 
 	- Right-click on Source SDK Base 2013 Singleplayer.
 	- Go to the "Betas" tab.
-	- Change "Select the beta you would opt into" option to "incoming"
+	- Change "Select the beta you would opt into" option to "upcoming"
 	
 	(Optionally restart Steam).
 	
